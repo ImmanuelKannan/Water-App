@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E07F36134E2E0ADEF2C85E8B8FCEB6 /* Pods-Water AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2481F414111BE171EB1C4FA4AC8C3F09 /* Pods-Water AppUITests-dummy.m */; };
+		0CDC51540C1F1F793B7284D1E5B53DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7A6D7681460FF1DB602A8F5CE68D0C6E /* Pods-Water App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18908E239A66676E8BAE916A679E2990 /* Pods-Water App-dummy.m */; };
+		D7300A770CC65C86D31F1C83A3C12849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D98F6A4773B14346665F63C2EAF14A35 /* Pods-Water AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D1F23ED629157738AF5717AD9906E5 /* Pods-Water AppTests-dummy.m */; };
+		F054C49F8A61260ECF838E81C2197BFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		038DA912FA323E808E1A0F8FF746C8AB /* Pods-Water AppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppTests-frameworks.sh"; sourceTree = "<group>"; };
+		18908E239A66676E8BAE916A679E2990 /* Pods-Water App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water App-dummy.m"; sourceTree = "<group>"; };
+		1F435B74DE6AA300D190385D48466270 /* Pods-Water App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		23FDF32110DD5B3DADDF9EFBC8CAA22E /* libPods-Water App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Water App.a"; path = "libPods-Water App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2481F414111BE171EB1C4FA4AC8C3F09 /* Pods-Water AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water AppUITests-dummy.m"; sourceTree = "<group>"; };
+		313B607871FFAAEF296A58A7D3148B6E /* Pods-Water AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D37E43946E40290C1B22F9C819A14CB /* Pods-Water AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5E58D86BECFCCE0596594121A9926555 /* Pods-Water App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water App.release.xcconfig"; sourceTree = "<group>"; };
+		680FF4C6350E10BF4182A23D56278BDC /* libPods-Water AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Water AppTests.a"; path = "libPods-Water AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70EFE954C6EC1DF5FA193E846B442BEB /* Pods-Water AppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		76B54C2FA37E9BA50D95A29228E47806 /* Pods-Water AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77FF6E2D50EFB23962C3F093F73972F3 /* Pods-Water AppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppTests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5D1F23ED629157738AF5717AD9906E5 /* Pods-Water AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water AppTests-dummy.m"; sourceTree = "<group>"; };
+		A909A6824564E60A0CC02ED8AB000B84 /* Pods-Water App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water App-resources.sh"; sourceTree = "<group>"; };
+		AA85531FCCBBAFE7A615BE868633909C /* Pods-Water AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		AEEF5309866B4EFE53F77010E14F01E6 /* libPods-Water AppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Water AppUITests.a"; path = "libPods-Water AppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D4F4317FF6635F8726BBB51C4339CC /* Pods-Water App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water App.debug.xcconfig"; sourceTree = "<group>"; };
+		BFA8E90EF837F5B5BBB784CC7CAF0A70 /* Pods-Water App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water App-frameworks.sh"; sourceTree = "<group>"; };
+		BFEA5556F355960685FB5C26F4A41F8C /* Pods-Water App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water App-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D72A575570DFEABC40E06E35AAFF4270 /* Pods-Water AppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppUITests-resources.sh"; sourceTree = "<group>"; };
+		DBD3FC10D431725A89D442C768E4BF2C /* Pods-Water AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DD1CF8BB261DFC193528FB5AE1879118 /* Pods-Water AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F459B1CEA06DA9474C9DE72CFE02044E /* Pods-Water AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F638F11768273E6C12840FEE91499392 /* Pods-Water AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85F1B6975AF5F5FA6BFC67F52C6B4617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDC51540C1F1F793B7284D1E5B53DAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81094B6B9869D534B11AC6827BE7974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F054C49F8A61260ECF838E81C2197BFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34B9D07B11750E3B0C1BEBD453E0D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7300A770CC65C86D31F1C83A3C12849 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BB2D50EB685DC6762F00E15F2B759C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97EB6644A2ABFDE8696F2C9A79675049 /* Pods-Water App */,
+				FB3FDD529B344ED7BC18DCF159C5DC42 /* Pods-Water AppTests */,
+				9C82543BE1898942DB54A963154B5660 /* Pods-Water AppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7187F337D383B782442CFBDD33DCC100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23FDF32110DD5B3DADDF9EFBC8CAA22E /* libPods-Water App.a */,
+				680FF4C6350E10BF4182A23D56278BDC /* libPods-Water AppTests.a */,
+				AEEF5309866B4EFE53F77010E14F01E6 /* libPods-Water AppUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7187F337D383B782442CFBDD33DCC100 /* Products */,
+				5BB2D50EB685DC6762F00E15F2B759C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		97EB6644A2ABFDE8696F2C9A79675049 /* Pods-Water App */ = {
+			isa = PBXGroup;
+			children = (
+				1F435B74DE6AA300D190385D48466270 /* Pods-Water App-acknowledgements.markdown */,
+				BFEA5556F355960685FB5C26F4A41F8C /* Pods-Water App-acknowledgements.plist */,
+				18908E239A66676E8BAE916A679E2990 /* Pods-Water App-dummy.m */,
+				BFA8E90EF837F5B5BBB784CC7CAF0A70 /* Pods-Water App-frameworks.sh */,
+				A909A6824564E60A0CC02ED8AB000B84 /* Pods-Water App-resources.sh */,
+				B0D4F4317FF6635F8726BBB51C4339CC /* Pods-Water App.debug.xcconfig */,
+				5E58D86BECFCCE0596594121A9926555 /* Pods-Water App.release.xcconfig */,
+			);
+			name = "Pods-Water App";
+			path = "Target Support Files/Pods-Water App";
+			sourceTree = "<group>";
+		};
+		9C82543BE1898942DB54A963154B5660 /* Pods-Water AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD1CF8BB261DFC193528FB5AE1879118 /* Pods-Water AppUITests-acknowledgements.markdown */,
+				313B607871FFAAEF296A58A7D3148B6E /* Pods-Water AppUITests-acknowledgements.plist */,
+				2481F414111BE171EB1C4FA4AC8C3F09 /* Pods-Water AppUITests-dummy.m */,
+				70EFE954C6EC1DF5FA193E846B442BEB /* Pods-Water AppUITests-frameworks.sh */,
+				D72A575570DFEABC40E06E35AAFF4270 /* Pods-Water AppUITests-resources.sh */,
+				76B54C2FA37E9BA50D95A29228E47806 /* Pods-Water AppUITests.debug.xcconfig */,
+				DBD3FC10D431725A89D442C768E4BF2C /* Pods-Water AppUITests.release.xcconfig */,
+			);
+			name = "Pods-Water AppUITests";
+			path = "Target Support Files/Pods-Water AppUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB3FDD529B344ED7BC18DCF159C5DC42 /* Pods-Water AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D37E43946E40290C1B22F9C819A14CB /* Pods-Water AppTests-acknowledgements.markdown */,
+				F459B1CEA06DA9474C9DE72CFE02044E /* Pods-Water AppTests-acknowledgements.plist */,
+				A5D1F23ED629157738AF5717AD9906E5 /* Pods-Water AppTests-dummy.m */,
+				038DA912FA323E808E1A0F8FF746C8AB /* Pods-Water AppTests-frameworks.sh */,
+				77FF6E2D50EFB23962C3F093F73972F3 /* Pods-Water AppTests-resources.sh */,
+				F638F11768273E6C12840FEE91499392 /* Pods-Water AppTests.debug.xcconfig */,
+				AA85531FCCBBAFE7A615BE868633909C /* Pods-Water AppTests.release.xcconfig */,
+			);
+			name = "Pods-Water AppTests";
+			path = "Target Support Files/Pods-Water AppTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DC9D0610788036269CE345BC480F222 /* Pods-Water AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F65B9C8F5162C51FC9D1937ED0E3F74 /* Build configuration list for PBXNativeTarget "Pods-Water AppTests" */;
+			buildPhases = (
+				E333FC5416745FC7D024412D7EC4CBEB /* Sources */,
+				D34B9D07B11750E3B0C1BEBD453E0D47 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Water AppTests";
+			productName = "Pods-Water AppTests";
+			productReference = 680FF4C6350E10BF4182A23D56278BDC /* libPods-Water AppTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		95025B72D64FB4B08A2DDB731FD49A05 /* Pods-Water App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F34650552175E849C478E9DA72E0DFD /* Build configuration list for PBXNativeTarget "Pods-Water App" */;
+			buildPhases = (
+				1C920981B9B731C13622B04C39EF1142 /* Sources */,
+				85F1B6975AF5F5FA6BFC67F52C6B4617 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Water App";
+			productName = "Pods-Water App";
+			productReference = 23FDF32110DD5B3DADDF9EFBC8CAA22E /* libPods-Water App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9A22A1EC83B0ED6676D57BBBEE1F6D09 /* Pods-Water AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1279ADBCFD52DCCF42F3CF837B7BDBF0 /* Build configuration list for PBXNativeTarget "Pods-Water AppUITests" */;
+			buildPhases = (
+				2B2C69A1A9F7141309F129D8F77C640A /* Sources */,
+				A81094B6B9869D534B11AC6827BE7974 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Water AppUITests";
+			productName = "Pods-Water AppUITests";
+			productReference = AEEF5309866B4EFE53F77010E14F01E6 /* libPods-Water AppUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7187F337D383B782442CFBDD33DCC100 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95025B72D64FB4B08A2DDB731FD49A05 /* Pods-Water App */,
+				0DC9D0610788036269CE345BC480F222 /* Pods-Water AppTests */,
+				9A22A1EC83B0ED6676D57BBBEE1F6D09 /* Pods-Water AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C920981B9B731C13622B04C39EF1142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6D7681460FF1DB602A8F5CE68D0C6E /* Pods-Water App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2C69A1A9F7141309F129D8F77C640A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E07F36134E2E0ADEF2C85E8B8FCEB6 /* Pods-Water AppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E333FC5416745FC7D024412D7EC4CBEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F6A4773B14346665F63C2EAF14A35 /* Pods-Water AppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1530960C2F80467659A3791F19B6AA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F638F11768273E6C12840FEE91499392 /* Pods-Water AppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2971C243C0D9D16B430393E7E9DBE37A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA85531FCCBBAFE7A615BE868633909C /* Pods-Water AppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3276ED0FA94BDB26264750910E3BE939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D4F4317FF6635F8726BBB51C4339CC /* Pods-Water App.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B7C2732F90543C2FF885D9CEF5B75F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76B54C2FA37E9BA50D95A29228E47806 /* Pods-Water AppUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F5CAC9A5A923C7430E304E88661F47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E58D86BECFCCE0596594121A9926555 /* Pods-Water App.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		912D994E7484C10A44BC28C522A63FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD3FC10D431725A89D442C768E4BF2C /* Pods-Water AppUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1279ADBCFD52DCCF42F3CF837B7BDBF0 /* Build configuration list for PBXNativeTarget "Pods-Water AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7C2732F90543C2FF885D9CEF5B75F4 /* Debug */,
+				912D994E7484C10A44BC28C522A63FAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F65B9C8F5162C51FC9D1937ED0E3F74 /* Build configuration list for PBXNativeTarget "Pods-Water AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1530960C2F80467659A3791F19B6AA8C /* Debug */,
+				2971C243C0D9D16B430393E7E9DBE37A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F34650552175E849C478E9DA72E0DFD /* Build configuration list for PBXNativeTarget "Pods-Water App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3276ED0FA94BDB26264750910E3BE939 /* Debug */,
+				6F5CAC9A5A923C7430E304E88661F47C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
