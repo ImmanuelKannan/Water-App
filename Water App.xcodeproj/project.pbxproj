@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		187E89001E840BC5007DFB52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E88FF1E840BC5007DFB52 /* main.m */; };
 		187E89031E840BC5007DFB52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89021E840BC5007DFB52 /* AppDelegate.m */; };
-		187E89061E840BC5007DFB52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89051E840BC5007DFB52 /* ViewController.m */; };
-		187E89091E840BC5007DFB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E89071E840BC5007DFB52 /* Main.storyboard */; };
 		187E890C1E840BC5007DFB52 /* Water_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187E890A1E840BC5007DFB52 /* Water_App.xcdatamodeld */; };
 		187E890E1E840BC5007DFB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187E890D1E840BC5007DFB52 /* Assets.xcassets */; };
 		187E89111E840BC5007DFB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E890F1E840BC5007DFB52 /* LaunchScreen.storyboard */; };
 		187E891C1E840BC5007DFB52 /* Water_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E891B1E840BC5007DFB52 /* Water_AppTests.m */; };
 		187E89271E840BC5007DFB52 /* Water_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89261E840BC5007DFB52 /* Water_AppUITests.m */; };
+		187E89391E840F22007DFB52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89381E840F22007DFB52 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +39,6 @@
 		187E88FF1E840BC5007DFB52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		187E89011E840BC5007DFB52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		187E89021E840BC5007DFB52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		187E89041E840BC5007DFB52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		187E89051E840BC5007DFB52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		187E89081E840BC5007DFB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187E890B1E840BC5007DFB52 /* Water_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Water_App.xcdatamodel; sourceTree = "<group>"; };
 		187E890D1E840BC5007DFB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187E89101E840BC5007DFB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +49,8 @@
 		187E89221E840BC5007DFB52 /* Water AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Water AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187E89261E840BC5007DFB52 /* Water_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Water_AppUITests.m; sourceTree = "<group>"; };
 		187E89281E840BC5007DFB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187E89371E840F22007DFB52 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		187E89381E840F22007DFB52 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +103,8 @@
 			children = (
 				187E89011E840BC5007DFB52 /* AppDelegate.h */,
 				187E89021E840BC5007DFB52 /* AppDelegate.m */,
-				187E89041E840BC5007DFB52 /* ViewController.h */,
-				187E89051E840BC5007DFB52 /* ViewController.m */,
-				187E89071E840BC5007DFB52 /* Main.storyboard */,
+				187E89371E840F22007DFB52 /* ViewController.h */,
+				187E89381E840F22007DFB52 /* ViewController.m */,
 				187E890D1E840BC5007DFB52 /* Assets.xcassets */,
 				187E890F1E840BC5007DFB52 /* LaunchScreen.storyboard */,
 				187E89121E840BC5007DFB52 /* Info.plist */,
@@ -254,7 +251,6 @@
 			files = (
 				187E89111E840BC5007DFB52 /* LaunchScreen.storyboard in Resources */,
 				187E890E1E840BC5007DFB52 /* Assets.xcassets in Resources */,
-				187E89091E840BC5007DFB52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187E89061E840BC5007DFB52 /* ViewController.m in Sources */,
 				187E890C1E840BC5007DFB52 /* Water_App.xcdatamodeld in Sources */,
 				187E89031E840BC5007DFB52 /* AppDelegate.m in Sources */,
+				187E89391E840F22007DFB52 /* ViewController.m in Sources */,
 				187E89001E840BC5007DFB52 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,14 +314,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		187E89071E840BC5007DFB52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				187E89081E840BC5007DFB52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		187E890F1E840BC5007DFB52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,7 +422,7 @@
 				DEVELOPMENT_TEAM = YD6XDYJUC5;
 				INFOPLIST_FILE = "Water App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "immanuel.Water-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "Immanuel.Water-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -446,7 +434,7 @@
 				DEVELOPMENT_TEAM = YD6XDYJUC5;
 				INFOPLIST_FILE = "Water App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "immanuel.Water-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "Immanuel.Water-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -520,6 +508,7 @@
 				187E892D1E840BC5007DFB52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		187E892E1E840BC5007DFB52 /* Build configuration list for PBXNativeTarget "Water AppTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +517,7 @@
 				187E89301E840BC5007DFB52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		187E89311E840BC5007DFB52 /* Build configuration list for PBXNativeTarget "Water AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +526,7 @@
 				187E89331E840BC5007DFB52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
