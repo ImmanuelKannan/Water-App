@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FSCalendar/FSCalendar.h>
 
-@interface TrackerViewController : UIViewController
+@interface TrackerViewController : UIViewController < FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance >
 
 @end
