@@ -42,8 +42,8 @@
 
 /* Begin PBXFileReference section */
 		10D443E73E3D39B42F3A96F4 /* Pods-Water AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Water AppTests/Pods-Water AppTests.release.xcconfig"; sourceTree = "<group>"; };
-		182F0E2C1E8482520019DF4A /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentViewController.h; path = ../ParentViewController.h; sourceTree = "<group>"; };
-		182F0E2D1E8482520019DF4A /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentViewController.m; path = ../ParentViewController.m; sourceTree = "<group>"; };
+		182F0E2C1E8482520019DF4A /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		182F0E2D1E8482520019DF4A /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
 		182F0E381E8487730019DF4A /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		182F0E391E8487730019DF4A /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		182F0E3B1E8487970019DF4A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
