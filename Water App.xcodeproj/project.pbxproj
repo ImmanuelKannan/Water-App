@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182F0E2E1E8482520019DF4A /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F0E2D1E8482520019DF4A /* ParentViewController.m */; };
+		182F0E3A1E8487730019DF4A /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F0E391E8487730019DF4A /* SettingsTableViewController.m */; };
+		182F0E3D1E8487970019DF4A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F0E3C1E8487970019DF4A /* MainViewController.m */; };
+		182F0E401E8487A10019DF4A /* TrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F0E3F1E8487A10019DF4A /* TrackerViewController.m */; };
 		187E89001E840BC5007DFB52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E88FF1E840BC5007DFB52 /* main.m */; };
 		187E89031E840BC5007DFB52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89021E840BC5007DFB52 /* AppDelegate.m */; };
 		187E890C1E840BC5007DFB52 /* Water_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187E890A1E840BC5007DFB52 /* Water_App.xcdatamodeld */; };
@@ -38,6 +42,15 @@
 
 /* Begin PBXFileReference section */
 		10D443E73E3D39B42F3A96F4 /* Pods-Water AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Water AppTests/Pods-Water AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		182F0E2C1E8482520019DF4A /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentViewController.h; path = ../ParentViewController.h; sourceTree = "<group>"; };
+		182F0E2D1E8482520019DF4A /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentViewController.m; path = ../ParentViewController.m; sourceTree = "<group>"; };
+		182F0E381E8487730019DF4A /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		182F0E391E8487730019DF4A /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		182F0E3B1E8487970019DF4A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		182F0E3C1E8487970019DF4A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		182F0E3E1E8487A10019DF4A /* TrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerViewController.h; sourceTree = "<group>"; };
+		182F0E3F1E8487A10019DF4A /* TrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
+		182F0E411E848B450019DF4A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		187E88FB1E840BC5007DFB52 /* Water App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Water App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187E88FF1E840BC5007DFB52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		187E89011E840BC5007DFB52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +130,15 @@
 			children = (
 				187E89011E840BC5007DFB52 /* AppDelegate.h */,
 				187E89021E840BC5007DFB52 /* AppDelegate.m */,
+				182F0E2C1E8482520019DF4A /* ParentViewController.h */,
+				182F0E2D1E8482520019DF4A /* ParentViewController.m */,
+				182F0E3B1E8487970019DF4A /* MainViewController.h */,
+				182F0E3C1E8487970019DF4A /* MainViewController.m */,
+				182F0E3E1E8487A10019DF4A /* TrackerViewController.h */,
+				182F0E3F1E8487A10019DF4A /* TrackerViewController.m */,
+				182F0E381E8487730019DF4A /* SettingsTableViewController.h */,
+				182F0E391E8487730019DF4A /* SettingsTableViewController.m */,
+				182F0E411E848B450019DF4A /* Constants.h */,
 				187E890D1E840BC5007DFB52 /* Assets.xcassets */,
 				187E890F1E840BC5007DFB52 /* LaunchScreen.storyboard */,
 				187E89121E840BC5007DFB52 /* Info.plist */,
@@ -457,8 +479,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182F0E3A1E8487730019DF4A /* SettingsTableViewController.m in Sources */,
+				182F0E401E8487A10019DF4A /* TrackerViewController.m in Sources */,
+				182F0E3D1E8487970019DF4A /* MainViewController.m in Sources */,
 				187E890C1E840BC5007DFB52 /* Water_App.xcdatamodeld in Sources */,
 				187E89031E840BC5007DFB52 /* AppDelegate.m in Sources */,
+				182F0E2E1E8482520019DF4A /* ParentViewController.m in Sources */,
 				187E89001E840BC5007DFB52 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
