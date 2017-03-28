@@ -19,6 +19,8 @@
 @property (nonatomic, strong) TrackerViewController *trackerViewController;
 @property (nonatomic, strong) SettingsTableViewController *settingsTableViewController;
 
+@property (nonatomic, strong) UILabel *screenNameLabel;
+
 @end
 
 @implementation ParentViewController
@@ -39,10 +41,41 @@
     [self setupScrollView];
     [self setupDivider];
     
+    self.screenNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, self.view.bounds.size.width - 40, 25)];
+    self.screenNameLabel.textAlignment = NSTextAlignmentCenter;
+    self.screenNameLabel.textColor = kWhiteColor;
+    [self.view addSubview:self.screenNameLabel];
+    
     self.view.backgroundColor = kBackgroundColor;
 }
 
 #pragma mark - UIScrollViewDelegate Methods
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    int page = self.scrollView.contentOffset.x / self.scrollView.frame.size.width;
+    
+    switch (page) {
+        case 0:
+            self.screenNameLabel.text = @"Tracker View";
+            break;
+        case 1:
+            self.screenNameLabel.text = @"Main View";
+            break;
+        case 2:
+            self.screenNameLabel.text = @"Settings View";
+            break;
+        default:
+            break;
+    }
+    
+    NSLog(@"Page: %@", self.screenNameLabel);
+}
+
+#pragma mark - Other Methods
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
 
 
 #pragma mark - Setup Methods
@@ -68,7 +101,7 @@
         self.scrollView.pagingEnabled = YES;
         self.scrollView.delegate = self;
         
-        NSArray *viewControllers = [NSArray arrayWithObjects:self.mainViewController, self.trackerViewController, self.settingsTableViewController, nil];
+        NSArray *viewControllers = [NSArray arrayWithObjects:self.trackerViewController, self.mainViewController, self.settingsTableViewController, nil];
         int index = 0;
         
         CGFloat width = self.view.bounds.size.width;
@@ -83,6 +116,10 @@
             index++;
         }
         
+        //Sets the middle view controller (MainViewController) to be the first view controller displayed
+        CGPoint point = CGPointMake(self.scrollView.frame.size.width, 0);
+        [self.scrollView setContentOffset:point animated:NO];
+        
         [self.view addSubview:self.scrollView];
     }
 }
@@ -95,7 +132,7 @@
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.path = [path CGPath];
     shapeLayer.strokeColor = [[UIColor whiteColor] CGColor];
-    shapeLayer.lineWidth = 3.0;
+    shapeLayer.lineWidth = 1.5;
     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
     
     [self.view.layer addSublayer:shapeLayer];

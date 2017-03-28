@@ -18,9 +18,9 @@
 		187E89111E840BC5007DFB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E890F1E840BC5007DFB52 /* LaunchScreen.storyboard */; };
 		187E891C1E840BC5007DFB52 /* Water_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E891B1E840BC5007DFB52 /* Water_AppTests.m */; };
 		187E89271E840BC5007DFB52 /* Water_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89261E840BC5007DFB52 /* Water_AppUITests.m */; };
-		7D9C937466C5ADBCC9DA966E /* libPods-Water AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBABF110C8D2BDC20AAC990 /* libPods-Water AppTests.a */; };
-		9A8C02879F2A5EB1FD4CE1A1 /* libPods-Water App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8518BD021F3FCCBBB1E02372 /* libPods-Water App.a */; };
-		EFC93E17699751C279CF9DE3 /* libPods-Water AppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A533253C711443C1108A1FAC /* libPods-Water AppUITests.a */; };
+		6218D4358F9DC7F52738F4CD /* Pods_Water_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F395FD4F112C5E0B879AB591 /* Pods_Water_App.framework */; };
+		B640DDA1C03D5EE118B9E155 /* Pods_Water_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E32F47B0E66911D251722 /* Pods_Water_AppUITests.framework */; };
+		EF6A4F83A6361CE7FD8D6F73 /* Pods_Water_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C0F6920C8FDABFB5F17373 /* Pods_Water_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +68,10 @@
 		1E0E6F9AD04C1ADA95E99FDA /* Pods-Water AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Water AppUITests/Pods-Water AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		272FA7EAD7780D29F208EAED /* Pods-Water App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Water App/Pods-Water App.release.xcconfig"; sourceTree = "<group>"; };
 		42B3C0002EE72748344FEFDC /* Pods-Water AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Water AppUITests/Pods-Water AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46C0F6920C8FDABFB5F17373 /* Pods_Water_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Water_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		502E32F47B0E66911D251722 /* Pods_Water_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Water_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847E2DE8553AB80872CFDC0D /* Pods-Water AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Water AppTests/Pods-Water AppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8518BD021F3FCCBBB1E02372 /* libPods-Water App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Water App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A533253C711443C1108A1FAC /* libPods-Water AppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Water AppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEBABF110C8D2BDC20AAC990 /* libPods-Water AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Water AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F395FD4F112C5E0B879AB591 /* Pods_Water_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Water_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8AC30F71A108ECFD6D944E /* Pods-Water App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Water App/Pods-Water App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A8C02879F2A5EB1FD4CE1A1 /* libPods-Water App.a in Frameworks */,
+				6218D4358F9DC7F52738F4CD /* Pods_Water_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D9C937466C5ADBCC9DA966E /* libPods-Water AppTests.a in Frameworks */,
+				EF6A4F83A6361CE7FD8D6F73 /* Pods_Water_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC93E17699751C279CF9DE3 /* libPods-Water AppUITests.a in Frameworks */,
+				B640DDA1C03D5EE118B9E155 /* Pods_Water_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +132,10 @@
 				187E89021E840BC5007DFB52 /* AppDelegate.m */,
 				182F0E2C1E8482520019DF4A /* ParentViewController.h */,
 				182F0E2D1E8482520019DF4A /* ParentViewController.m */,
-				182F0E3B1E8487970019DF4A /* MainViewController.h */,
-				182F0E3C1E8487970019DF4A /* MainViewController.m */,
 				182F0E3E1E8487A10019DF4A /* TrackerViewController.h */,
 				182F0E3F1E8487A10019DF4A /* TrackerViewController.m */,
+				182F0E3B1E8487970019DF4A /* MainViewController.h */,
+				182F0E3C1E8487970019DF4A /* MainViewController.m */,
 				182F0E381E8487730019DF4A /* SettingsTableViewController.h */,
 				182F0E391E8487730019DF4A /* SettingsTableViewController.m */,
 				182F0E411E848B450019DF4A /* Constants.h */,
@@ -190,9 +190,9 @@
 		E715BB56B28807FB85FF3B2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8518BD021F3FCCBBB1E02372 /* libPods-Water App.a */,
-				BEBABF110C8D2BDC20AAC990 /* libPods-Water AppTests.a */,
-				A533253C711443C1108A1FAC /* libPods-Water AppUITests.a */,
+				F395FD4F112C5E0B879AB591 /* Pods_Water_App.framework */,
+				46C0F6920C8FDABFB5F17373 /* Pods_Water_AppTests.framework */,
+				502E32F47B0E66911D251722 /* Pods_Water_AppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

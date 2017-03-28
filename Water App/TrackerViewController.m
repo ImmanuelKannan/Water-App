@@ -29,7 +29,7 @@
 #pragma mark - Setup Methods
 
 - (void)setupCalendar {
-    FSCalendar *calendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 275)];
+    FSCalendar *calendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 275)];
     calendar.delegate = self;
     calendar.dataSource = self;
     [self.view addSubview:calendar];
