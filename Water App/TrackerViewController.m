@@ -43,6 +43,8 @@
     
     self.calendar.appearance.titleDefaultColor = kWhiteColor;
     
+    self.calendar.appearance.headerMinimumDissolvedAlpha = 0;
+    
     self.calendar.clipsToBounds = YES;
     
 }
