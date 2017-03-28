@@ -14,6 +14,8 @@
 
     #define kBackgroundColor [UIColor colorWithRed:47./255. green:73./255. blue:88./255. alpha:1.0]
 
+    #define kWhiteColor [UIColor whiteColor]
+
 
 #pragma mark - Font & Sizes
 
