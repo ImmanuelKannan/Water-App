@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FSCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Water App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0DC9D0610788036269CE345BC480F222</key>
+		<key>4C47D9646A359FF893CD8F5F8218BAD1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>95025B72D64FB4B08A2DDB731FD49A05</key>
+		<key>4C69462D84E08E954B70407C4BF13558</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A22A1EC83B0ED6676D57BBBEE1F6D09</key>
+		<key>79F2F7BF92408E1DC0DC5ABE94823D81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5A2DB7A84B7B78E359870D2E1B24AA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

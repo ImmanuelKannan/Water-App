@@ -7,171 +7,427 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E07F36134E2E0ADEF2C85E8B8FCEB6 /* Pods-Water AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2481F414111BE171EB1C4FA4AC8C3F09 /* Pods-Water AppUITests-dummy.m */; };
-		0CDC51540C1F1F793B7284D1E5B53DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7A6D7681460FF1DB602A8F5CE68D0C6E /* Pods-Water App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18908E239A66676E8BAE916A679E2990 /* Pods-Water App-dummy.m */; };
-		D7300A770CC65C86D31F1C83A3C12849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		D98F6A4773B14346665F63C2EAF14A35 /* Pods-Water AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D1F23ED629157738AF5717AD9906E5 /* Pods-Water AppTests-dummy.m */; };
-		F054C49F8A61260ECF838E81C2197BFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		06C597638DC274833C9959489F8CD63F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		0A7AF0E9B853211DE831CAAD4C21F11C /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B5E4EC11B6E7BC1675676181C90764 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DD46AF65FABE6D2BDE4501F807046A6 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 124E72FC28153765BD5D36D37BF12BCF /* FSCalendarAppearance.m */; };
+		243E3FBB25AD6B55CDF6971E0D22DA4F /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6EF3E2482FCB0E6D721ADEB95E47D1 /* FSCalendarConstants.m */; };
+		42FAAE6F2C20F84431607591F5775DFB /* Pods-Water AppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89DB29C7D97103BC45FA183709F07375 /* Pods-Water AppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463AFF947F690033D2F5547F9D94210B /* Pods-Water AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B576851ADA100A6AED2CF6A6E00C7D1 /* Pods-Water AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49F1C59A34E52484FD2B6462CE8D7C91 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD3650028FD516AB9F5D9CF2C8C95A6 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55F4561E55A6CF264BEDB8FB18B5FA8C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFA349077C1D64807DDB34BF1814EAE /* FSCalendarCell.m */; };
+		57D4F36C483A487950FA1F143AE5DCBC /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 03FFA66CA10853EC1EFFCA8DEA80D666 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C62C27E2855390100E9519DE3095DDB /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D92ABF572B50A315FCAD7EB3CA5AE64E /* FSCalendarHeaderView.m */; };
+		625F05F7702CA250DEB66A699766DA9E /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF921BDA43E4C1816F8CA0FE5B674A0A /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66737F48243D514269C499D65A7B4DBE /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F36E86FC5B36470E400EC978FF0E559 /* FSCalendar.m */; };
+		6B023807FF3CADD85D15E485C7D387DA /* Pods-Water App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F9DDAFAFADC81BC0B6699BE8F29790 /* Pods-Water App-dummy.m */; };
+		712FF0C70B4C85F44AFB5CDDC1DD9018 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = DD074F487635929B89EFA4CA955F5A1F /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E320930D1F4218F307C7FB786F0C514 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E266396EC8AE8AB51024690C19F781D2 /* FSCalendarCollectionView.m */; };
+		8632FCFA0471878FC95240290BE97458 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF73484BC14766B7A11A3A51CA136895 /* FSCalendar-dummy.m */; };
+		8E8E60E0406837DF7038528766C90AEA /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F722B681EF75147A911C30A52FD4FF /* FSCalendarScopeHandle.m */; };
+		8F7003744526BA3547F59200EE4F4D16 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6430BB8EA952BA745EF4285B8B752736 /* FSCalendarWeekdayView.m */; };
+		91693C90642539B4F411E794548A9E2A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E47BF732E09563F22458A19FF24059E5 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96E021283F050BCADF9A9B668C77B203 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DDD36081D62CF1A84CA130D78F2052 /* FSCalendarExtensions.m */; };
+		9CF04404C01848D25E78B22A88BFF129 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = EF30DCC0BF6EA6C88F9E3A9F82FA4C53 /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A000A7A7023F7FB4CEDD1023EB87BF93 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D414D54646FCA5B8E5A7E043F972B15 /* FSCalendarCollectionViewLayout.m */; };
+		A3D1147CED9648BEDE2E47B8E8A44924 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C70E5374F64D6CBFFC50DCE05EE3FAD /* FSCalendar+Deprecated.m */; };
+		A6A2C47205D9CA0669A2453B9677D9A4 /* Pods-Water AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE385668DDAF2D29F1CBA8758D9981 /* Pods-Water AppTests-dummy.m */; };
+		A701CE014A08B08DD4CA1632BDF9247A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
+		AA530E2A16D259DF436F9957BC923F18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		AA978FCF3EF1D8D10DDE3BB4C6312A7B /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F335FCA7E61FF888DBF855E009ABEC /* FSCalendarDelegationProxy.m */; };
+		BDA1ED05CBA5580B30785A431D5B231B /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 681DEF7B9D8A14581BB712DE47FC2F21 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF4E05CD02BC601CA9D804537AEC3A49 /* Pods-Water AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5538D576CF255F0CB21BBDAE45488 /* Pods-Water AppUITests-dummy.m */; };
+		C17D68C964954EF1C0BB3C314C2F452F /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = BA01C27CCB647F16870EEA38BCCD8F0B /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30A9EB958FA9EF94CE0B694B849FF86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		C69663957B2EB4C7CF4D8192480AA8B4 /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D8FC6ED4AC937675D941DF8B23D04B /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C78D42E304E036327C6A0BA2DF6E154D /* Pods-Water App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFC539DA0B8E2EB6013FAF5353339EC /* Pods-Water App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDB052C277F6148BBAACB2C2C7C6321B /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D2D0BB4DFE949533A80AF5B02FBF1F /* FSCalendarTransitionCoordinator.m */; };
+		CF2ABD6A243A7C112FD204C18DD7BC73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
+		D4F3BEEB43698475E5443150838E84ED /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 38322A7D3BC940E177028A70428E55EA /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1B077BAFD8840CA3D96BB4545B7B255 /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = E7729FDA4DE846CE7BFA73B21A47BAA2 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3B93CDF418A2678614DDAD9331C0C0D /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4691C6DE4578A266FB4A3501E650E11 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB6DD6C7237F9C135A3272ED92BE6B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		EE078A13105301767BE0ECAC1705A9B5 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD861C954023A2E8DC79EB450A37C1C /* FSCalendarStickyHeader.m */; };
+		F54E2CAED6EAE74D9E1F878E10FA30BD /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 135AC7FEA143B80C23A820DF4CA652F3 /* FSCalendarDelegationFactory.m */; };
+		F6A1EC699E916996EF2B7B4C6137DB8D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED101A24471B93A838A813752C3658F /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F746795DC38AD2DB3D584A110174FED0 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 19C04A65507ECFC57D467A48A114D13E /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75DFB5A6E8642C4964CC3968A2DD0C8 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 15703B33CD2389BF80A1FC95ED1B5822 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD051B5A9F3E663081656EB261A724D2 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F8DEEB28347C3AD638612AB13D69AD /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBEAF63A28F6A7DD881E8256F9503B7 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD137A9F591740C32A239F15D884900 /* FSCalendarCalculator.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		26C633658D6A2EC497BB9235F49F8F29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5A2DB7A84B7B78E359870D2E1B24AA7;
+			remoteInfo = FSCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		038DA912FA323E808E1A0F8FF746C8AB /* Pods-Water AppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppTests-frameworks.sh"; sourceTree = "<group>"; };
-		18908E239A66676E8BAE916A679E2990 /* Pods-Water App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water App-dummy.m"; sourceTree = "<group>"; };
-		1F435B74DE6AA300D190385D48466270 /* Pods-Water App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		23FDF32110DD5B3DADDF9EFBC8CAA22E /* libPods-Water App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Water App.a"; path = "libPods-Water App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2481F414111BE171EB1C4FA4AC8C3F09 /* Pods-Water AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water AppUITests-dummy.m"; sourceTree = "<group>"; };
-		313B607871FFAAEF296A58A7D3148B6E /* Pods-Water AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3D37E43946E40290C1B22F9C819A14CB /* Pods-Water AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5E58D86BECFCCE0596594121A9926555 /* Pods-Water App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water App.release.xcconfig"; sourceTree = "<group>"; };
-		680FF4C6350E10BF4182A23D56278BDC /* libPods-Water AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Water AppTests.a"; path = "libPods-Water AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70EFE954C6EC1DF5FA193E846B442BEB /* Pods-Water AppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppUITests-frameworks.sh"; sourceTree = "<group>"; };
-		76B54C2FA37E9BA50D95A29228E47806 /* Pods-Water AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		77FF6E2D50EFB23962C3F093F73972F3 /* Pods-Water AppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppTests-resources.sh"; sourceTree = "<group>"; };
+		03FFA66CA10853EC1EFFCA8DEA80D666 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		0A1BAB99AFA2DF62D0088F907BADEAEE /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		0AFE385668DDAF2D29F1CBA8758D9981 /* Pods-Water AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water AppTests-dummy.m"; sourceTree = "<group>"; };
+		0C6EF3E2482FCB0E6D721ADEB95E47D1 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		124E72FC28153765BD5D36D37BF12BCF /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		12ADFDDAF4E14CC7DA7D4A38546DF5AF /* Pods-Water AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		135AC7FEA143B80C23A820DF4CA652F3 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		14D2D0BB4DFE949533A80AF5B02FBF1F /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		15703B33CD2389BF80A1FC95ED1B5822 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		17B5E4EC11B6E7BC1675676181C90764 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
+		18FE426CE1F52F6C718DB790873D7851 /* Pods-Water AppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppUITests-resources.sh"; sourceTree = "<group>"; };
+		19C04A65507ECFC57D467A48A114D13E /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		1B1AD8FA8E2E9AF7AEFCFF542F49B4CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B576851ADA100A6AED2CF6A6E00C7D1 /* Pods-Water AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Water AppTests-umbrella.h"; sourceTree = "<group>"; };
+		1BDBD5BF74530B3217A16A063221C0C5 /* Pods-Water AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F36E86FC5B36470E400EC978FF0E559 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		260265330F4E0A7760CE8F536A2B17FD /* Pods-Water App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water App-frameworks.sh"; sourceTree = "<group>"; };
+		2CD3650028FD516AB9F5D9CF2C8C95A6 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		2F9AF17201E736F8F2DBBE488DA6D93E /* Pods-Water AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38322A7D3BC940E177028A70428E55EA /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		3AD4A6F8E8E97F01F34AEA6D107D0037 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D414D54646FCA5B8E5A7E043F972B15 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		3E6354B1E999BAA1DB58FF46ACD7570B /* Pods-Water AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42651D5059B74EFD6B8944126ACC5F89 /* Pods-Water AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Water AppTests.modulemap"; sourceTree = "<group>"; };
+		42A5538D576CF255F0CB21BBDAE45488 /* Pods-Water AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water AppUITests-dummy.m"; sourceTree = "<group>"; };
+		4778992BF90AE5400F39942D2972EB93 /* Pods-Water App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water App-acknowledgements.plist"; sourceTree = "<group>"; };
+		4901656F406DFD7CA8115DC219E30A58 /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
+		55450A7EF403C34AB5A20576A970F56F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5713DAB8B607846A52E2BF929EFAF34E /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		578CD4B65C4A5DAD524FC01605BCFE9C /* Pods-Water App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water App.release.xcconfig"; sourceTree = "<group>"; };
+		584718142DAB3BC21A9AB2EB147FDCFA /* Pods_Water_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Water_AppUITests.framework; path = "Pods-Water AppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59DDD36081D62CF1A84CA130D78F2052 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		5BF675A168132FD52AED630F977FE906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5DD861C954023A2E8DC79EB450A37C1C /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		5ED101A24471B93A838A813752C3658F /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		618AE8AE2456E8E756B306183BAC4853 /* Pods-Water AppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		631E74AC9A20425EF1C48429483A12E3 /* Pods_Water_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Water_AppTests.framework; path = "Pods-Water AppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6430BB8EA952BA745EF4285B8B752736 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		67D8FC6ED4AC937675D941DF8B23D04B /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		681DEF7B9D8A14581BB712DE47FC2F21 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		742F695C9CE47BAFC154AB5A623450A5 /* Pods-Water AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		809A319EFEC9FFAFA080E0E89BDED545 /* Pods-Water App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water App.debug.xcconfig"; sourceTree = "<group>"; };
+		80DFACAFC398B5E97741369FE57AF622 /* Pods-Water App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		80F335FCA7E61FF888DBF855E009ABEC /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		89DB29C7D97103BC45FA183709F07375 /* Pods-Water AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Water AppUITests-umbrella.h"; sourceTree = "<group>"; };
+		8EFC539DA0B8E2EB6013FAF5353339EC /* Pods-Water App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Water App-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5D1F23ED629157738AF5717AD9906E5 /* Pods-Water AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water AppTests-dummy.m"; sourceTree = "<group>"; };
-		A909A6824564E60A0CC02ED8AB000B84 /* Pods-Water App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water App-resources.sh"; sourceTree = "<group>"; };
-		AA85531FCCBBAFE7A615BE868633909C /* Pods-Water AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppTests.release.xcconfig"; sourceTree = "<group>"; };
-		AEEF5309866B4EFE53F77010E14F01E6 /* libPods-Water AppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Water AppUITests.a"; path = "libPods-Water AppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0D4F4317FF6635F8726BBB51C4339CC /* Pods-Water App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water App.debug.xcconfig"; sourceTree = "<group>"; };
-		BFA8E90EF837F5B5BBB784CC7CAF0A70 /* Pods-Water App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water App-frameworks.sh"; sourceTree = "<group>"; };
-		BFEA5556F355960685FB5C26F4A41F8C /* Pods-Water App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water App-acknowledgements.plist"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D72A575570DFEABC40E06E35AAFF4270 /* Pods-Water AppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppUITests-resources.sh"; sourceTree = "<group>"; };
-		DBD3FC10D431725A89D442C768E4BF2C /* Pods-Water AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DD1CF8BB261DFC193528FB5AE1879118 /* Pods-Water AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F459B1CEA06DA9474C9DE72CFE02044E /* Pods-Water AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F638F11768273E6C12840FEE91499392 /* Pods-Water AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C70E5374F64D6CBFFC50DCE05EE3FAD /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		A298DC37211E6994E00BD99DC6F64900 /* Pods-Water AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3701BD12DDFAA45D8595578FCA2ED9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3816CA38A53D7E5DC21226797257B7F /* Pods-Water AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7F25170CFB6BAC8E00606B0F2ADA28C /* Pods-Water AppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppTests-frameworks.sh"; sourceTree = "<group>"; };
+		ACB04BA5003D387F19C3D667A0B865E1 /* Pods-Water App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Water App.modulemap"; sourceTree = "<group>"; };
+		AEDD6A84A2A627E44CB4AEC05208EB8E /* Pods_Water_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Water_App.framework; path = "Pods-Water App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE49C5C24C25DD8811AA807956D4414 /* Pods-Water App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water App-resources.sh"; sourceTree = "<group>"; };
+		B4D75C18A0593252B08EC1E49260E44F /* Pods-Water AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4F9DDAFAFADC81BC0B6699BE8F29790 /* Pods-Water App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water App-dummy.m"; sourceTree = "<group>"; };
+		BA01C27CCB647F16870EEA38BCCD8F0B /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		BF73484BC14766B7A11A3A51CA136895 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		BFD137A9F591740C32A239F15D884900 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		C0E178A85A5D098F2FA5C103F77667C7 /* Pods-Water AppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppTests-resources.sh"; sourceTree = "<group>"; };
+		D1F8DEEB28347C3AD638612AB13D69AD /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		D8F722B681EF75147A911C30A52FD4FF /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		D92ABF572B50A315FCAD7EB3CA5AE64E /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		DD074F487635929B89EFA4CA955F5A1F /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		DEFA349077C1D64807DDB34BF1814EAE /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E266396EC8AE8AB51024690C19F781D2 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		E47BF732E09563F22458A19FF24059E5 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		E7729FDA4DE846CE7BFA73B21A47BAA2 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		EC32878090C4B2B93381956161EC0930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EF30DCC0BF6EA6C88F9E3A9F82FA4C53 /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		EF921BDA43E4C1816F8CA0FE5B674A0A /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		F4691C6DE4578A266FB4A3501E650E11 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		F73692D8D8AD7DC2F3E17D2EDAFB68AA /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2A3907EE2B60EB94115E2A8262C867 /* Pods-Water AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Water AppUITests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		85F1B6975AF5F5FA6BFC67F52C6B4617 /* Frameworks */ = {
+		2017BE535EA3A7FD52B885984BF7F2C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CDC51540C1F1F793B7284D1E5B53DAA /* Foundation.framework in Frameworks */,
+				C30A9EB958FA9EF94CE0B694B849FF86 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A81094B6B9869D534B11AC6827BE7974 /* Frameworks */ = {
+		2B0C121755DBF940DA569A041E683C9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F054C49F8A61260ECF838E81C2197BFC /* Foundation.framework in Frameworks */,
+				AA530E2A16D259DF436F9957BC923F18 /* Foundation.framework in Frameworks */,
+				A701CE014A08B08DD4CA1632BDF9247A /* QuartzCore.framework in Frameworks */,
+				CF2ABD6A243A7C112FD204C18DD7BC73 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D34B9D07B11750E3B0C1BEBD453E0D47 /* Frameworks */ = {
+		523683144D9BCB5F895CAA7EB0CB1A7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7300A770CC65C86D31F1C83A3C12849 /* Foundation.framework in Frameworks */,
+				EB6DD6C7237F9C135A3272ED92BE6B54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE9227F59E59827928192D8DB14FA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C597638DC274833C9959489F8CD63F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5BB2D50EB685DC6762F00E15F2B759C7 /* Targets Support Files */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				97EB6644A2ABFDE8696F2C9A79675049 /* Pods-Water App */,
-				FB3FDD529B344ED7BC18DCF159C5DC42 /* Pods-Water AppTests */,
-				9C82543BE1898942DB54A963154B5660 /* Pods-Water AppUITests */,
+				E5E9260013FA223D81B907D9285F6EA1 /* iOS */,
 			);
-			name = "Targets Support Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7187F337D383B782442CFBDD33DCC100 /* Products */ = {
+		2B00420AADAAE79ABC1484BB868D984D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23FDF32110DD5B3DADDF9EFBC8CAA22E /* libPods-Water App.a */,
-				680FF4C6350E10BF4182A23D56278BDC /* libPods-Water AppTests.a */,
-				AEEF5309866B4EFE53F77010E14F01E6 /* libPods-Water AppUITests.a */,
+				F73692D8D8AD7DC2F3E17D2EDAFB68AA /* FSCalendar.framework */,
+				AEDD6A84A2A627E44CB4AEC05208EB8E /* Pods_Water_App.framework */,
+				631E74AC9A20425EF1C48429483A12E3 /* Pods_Water_AppTests.framework */,
+				584718142DAB3BC21A9AB2EB147FDCFA /* Pods_Water_AppUITests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		465B95927F91D67F1960D10FDE1F86D6 /* Pods-Water App */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				1B1AD8FA8E2E9AF7AEFCFF542F49B4CC /* Info.plist */,
+				ACB04BA5003D387F19C3D667A0B865E1 /* Pods-Water App.modulemap */,
+				80DFACAFC398B5E97741369FE57AF622 /* Pods-Water App-acknowledgements.markdown */,
+				4778992BF90AE5400F39942D2972EB93 /* Pods-Water App-acknowledgements.plist */,
+				B4F9DDAFAFADC81BC0B6699BE8F29790 /* Pods-Water App-dummy.m */,
+				260265330F4E0A7760CE8F536A2B17FD /* Pods-Water App-frameworks.sh */,
+				AEE49C5C24C25DD8811AA807956D4414 /* Pods-Water App-resources.sh */,
+				8EFC539DA0B8E2EB6013FAF5353339EC /* Pods-Water App-umbrella.h */,
+				809A319EFEC9FFAFA080E0E89BDED545 /* Pods-Water App.debug.xcconfig */,
+				578CD4B65C4A5DAD524FC01605BCFE9C /* Pods-Water App.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-Water App";
+			path = "Target Support Files/Pods-Water App";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7187F337D383B782442CFBDD33DCC100 /* Products */,
-				5BB2D50EB685DC6762F00E15F2B759C7 /* Targets Support Files */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				A7E7B0CF2D0CEFB72B03929B0F193F2E /* Pods */,
+				2B00420AADAAE79ABC1484BB868D984D /* Products */,
+				E6300261C514C3D1FCC57F074CF8453F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		97EB6644A2ABFDE8696F2C9A79675049 /* Pods-Water App */ = {
+		86ED29C5FD7D0F3BDA3FE4C258850BEF /* FSCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				1F435B74DE6AA300D190385D48466270 /* Pods-Water App-acknowledgements.markdown */,
-				BFEA5556F355960685FB5C26F4A41F8C /* Pods-Water App-acknowledgements.plist */,
-				18908E239A66676E8BAE916A679E2990 /* Pods-Water App-dummy.m */,
-				BFA8E90EF837F5B5BBB784CC7CAF0A70 /* Pods-Water App-frameworks.sh */,
-				A909A6824564E60A0CC02ED8AB000B84 /* Pods-Water App-resources.sh */,
-				B0D4F4317FF6635F8726BBB51C4339CC /* Pods-Water App.debug.xcconfig */,
-				5E58D86BECFCCE0596594121A9926555 /* Pods-Water App.release.xcconfig */,
+				EF30DCC0BF6EA6C88F9E3A9F82FA4C53 /* FSCalendar.h */,
+				1F36E86FC5B36470E400EC978FF0E559 /* FSCalendar.m */,
+				9C70E5374F64D6CBFFC50DCE05EE3FAD /* FSCalendar+Deprecated.m */,
+				D1F8DEEB28347C3AD638612AB13D69AD /* FSCalendarAppearance.h */,
+				124E72FC28153765BD5D36D37BF12BCF /* FSCalendarAppearance.m */,
+				19C04A65507ECFC57D467A48A114D13E /* FSCalendarCalculator.h */,
+				BFD137A9F591740C32A239F15D884900 /* FSCalendarCalculator.m */,
+				15703B33CD2389BF80A1FC95ED1B5822 /* FSCalendarCell.h */,
+				DEFA349077C1D64807DDB34BF1814EAE /* FSCalendarCell.m */,
+				F4691C6DE4578A266FB4A3501E650E11 /* FSCalendarCollectionView.h */,
+				E266396EC8AE8AB51024690C19F781D2 /* FSCalendarCollectionView.m */,
+				E47BF732E09563F22458A19FF24059E5 /* FSCalendarCollectionViewLayout.h */,
+				3D414D54646FCA5B8E5A7E043F972B15 /* FSCalendarCollectionViewLayout.m */,
+				17B5E4EC11B6E7BC1675676181C90764 /* FSCalendarConstants.h */,
+				0C6EF3E2482FCB0E6D721ADEB95E47D1 /* FSCalendarConstants.m */,
+				03FFA66CA10853EC1EFFCA8DEA80D666 /* FSCalendarDelegationFactory.h */,
+				135AC7FEA143B80C23A820DF4CA652F3 /* FSCalendarDelegationFactory.m */,
+				2CD3650028FD516AB9F5D9CF2C8C95A6 /* FSCalendarDelegationProxy.h */,
+				80F335FCA7E61FF888DBF855E009ABEC /* FSCalendarDelegationProxy.m */,
+				DD074F487635929B89EFA4CA955F5A1F /* FSCalendarDynamicHeader.h */,
+				67D8FC6ED4AC937675D941DF8B23D04B /* FSCalendarExtensions.h */,
+				59DDD36081D62CF1A84CA130D78F2052 /* FSCalendarExtensions.m */,
+				5ED101A24471B93A838A813752C3658F /* FSCalendarHeaderView.h */,
+				D92ABF572B50A315FCAD7EB3CA5AE64E /* FSCalendarHeaderView.m */,
+				E7729FDA4DE846CE7BFA73B21A47BAA2 /* FSCalendarScopeHandle.h */,
+				D8F722B681EF75147A911C30A52FD4FF /* FSCalendarScopeHandle.m */,
+				38322A7D3BC940E177028A70428E55EA /* FSCalendarStickyHeader.h */,
+				5DD861C954023A2E8DC79EB450A37C1C /* FSCalendarStickyHeader.m */,
+				681DEF7B9D8A14581BB712DE47FC2F21 /* FSCalendarTransitionCoordinator.h */,
+				14D2D0BB4DFE949533A80AF5B02FBF1F /* FSCalendarTransitionCoordinator.m */,
+				BA01C27CCB647F16870EEA38BCCD8F0B /* FSCalendarWeekdayView.h */,
+				6430BB8EA952BA745EF4285B8B752736 /* FSCalendarWeekdayView.m */,
+				F7BBA5DCF975E676AD7CA2A020FAC6D6 /* Support Files */,
 			);
-			name = "Pods-Water App";
-			path = "Target Support Files/Pods-Water App";
+			name = FSCalendar;
+			path = FSCalendar;
 			sourceTree = "<group>";
 		};
-		9C82543BE1898942DB54A963154B5660 /* Pods-Water AppUITests */ = {
+		A7E7B0CF2D0CEFB72B03929B0F193F2E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD1CF8BB261DFC193528FB5AE1879118 /* Pods-Water AppUITests-acknowledgements.markdown */,
-				313B607871FFAAEF296A58A7D3148B6E /* Pods-Water AppUITests-acknowledgements.plist */,
-				2481F414111BE171EB1C4FA4AC8C3F09 /* Pods-Water AppUITests-dummy.m */,
-				70EFE954C6EC1DF5FA193E846B442BEB /* Pods-Water AppUITests-frameworks.sh */,
-				D72A575570DFEABC40E06E35AAFF4270 /* Pods-Water AppUITests-resources.sh */,
-				76B54C2FA37E9BA50D95A29228E47806 /* Pods-Water AppUITests.debug.xcconfig */,
-				DBD3FC10D431725A89D442C768E4BF2C /* Pods-Water AppUITests.release.xcconfig */,
+				86ED29C5FD7D0F3BDA3FE4C258850BEF /* FSCalendar */,
 			);
-			name = "Pods-Water AppUITests";
-			path = "Target Support Files/Pods-Water AppUITests";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		AAAAB685B635A94976E528BCDA167B78 /* Pods-Water AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FB3FDD529B344ED7BC18DCF159C5DC42 /* Pods-Water AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				3D37E43946E40290C1B22F9C819A14CB /* Pods-Water AppTests-acknowledgements.markdown */,
-				F459B1CEA06DA9474C9DE72CFE02044E /* Pods-Water AppTests-acknowledgements.plist */,
-				A5D1F23ED629157738AF5717AD9906E5 /* Pods-Water AppTests-dummy.m */,
-				038DA912FA323E808E1A0F8FF746C8AB /* Pods-Water AppTests-frameworks.sh */,
-				77FF6E2D50EFB23962C3F093F73972F3 /* Pods-Water AppTests-resources.sh */,
-				F638F11768273E6C12840FEE91499392 /* Pods-Water AppTests.debug.xcconfig */,
-				AA85531FCCBBAFE7A615BE868633909C /* Pods-Water AppTests.release.xcconfig */,
+				55450A7EF403C34AB5A20576A970F56F /* Info.plist */,
+				42651D5059B74EFD6B8944126ACC5F89 /* Pods-Water AppTests.modulemap */,
+				12ADFDDAF4E14CC7DA7D4A38546DF5AF /* Pods-Water AppTests-acknowledgements.markdown */,
+				A3816CA38A53D7E5DC21226797257B7F /* Pods-Water AppTests-acknowledgements.plist */,
+				0AFE385668DDAF2D29F1CBA8758D9981 /* Pods-Water AppTests-dummy.m */,
+				A7F25170CFB6BAC8E00606B0F2ADA28C /* Pods-Water AppTests-frameworks.sh */,
+				C0E178A85A5D098F2FA5C103F77667C7 /* Pods-Water AppTests-resources.sh */,
+				1B576851ADA100A6AED2CF6A6E00C7D1 /* Pods-Water AppTests-umbrella.h */,
+				3E6354B1E999BAA1DB58FF46ACD7570B /* Pods-Water AppTests.debug.xcconfig */,
+				742F695C9CE47BAFC154AB5A623450A5 /* Pods-Water AppTests.release.xcconfig */,
 			);
 			name = "Pods-Water AppTests";
 			path = "Target Support Files/Pods-Water AppTests";
 			sourceTree = "<group>";
 		};
+		AF835B18C9B6962D2A71C56A6B1564DD /* Pods-Water AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3701BD12DDFAA45D8595578FCA2ED9D /* Info.plist */,
+				FC2A3907EE2B60EB94115E2A8262C867 /* Pods-Water AppUITests.modulemap */,
+				1BDBD5BF74530B3217A16A063221C0C5 /* Pods-Water AppUITests-acknowledgements.markdown */,
+				B4D75C18A0593252B08EC1E49260E44F /* Pods-Water AppUITests-acknowledgements.plist */,
+				42A5538D576CF255F0CB21BBDAE45488 /* Pods-Water AppUITests-dummy.m */,
+				618AE8AE2456E8E756B306183BAC4853 /* Pods-Water AppUITests-frameworks.sh */,
+				18FE426CE1F52F6C718DB790873D7851 /* Pods-Water AppUITests-resources.sh */,
+				89DB29C7D97103BC45FA183709F07375 /* Pods-Water AppUITests-umbrella.h */,
+				A298DC37211E6994E00BD99DC6F64900 /* Pods-Water AppUITests.debug.xcconfig */,
+				2F9AF17201E736F8F2DBBE488DA6D93E /* Pods-Water AppUITests.release.xcconfig */,
+			);
+			name = "Pods-Water AppUITests";
+			path = "Target Support Files/Pods-Water AppUITests";
+			sourceTree = "<group>";
+		};
+		E5E9260013FA223D81B907D9285F6EA1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC32878090C4B2B93381956161EC0930 /* Foundation.framework */,
+				E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */,
+				5BF675A168132FD52AED630F977FE906 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E6300261C514C3D1FCC57F074CF8453F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				465B95927F91D67F1960D10FDE1F86D6 /* Pods-Water App */,
+				AAAAB685B635A94976E528BCDA167B78 /* Pods-Water AppTests */,
+				AF835B18C9B6962D2A71C56A6B1564DD /* Pods-Water AppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F7BBA5DCF975E676AD7CA2A020FAC6D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5713DAB8B607846A52E2BF929EFAF34E /* FSCalendar.modulemap */,
+				4901656F406DFD7CA8115DC219E30A58 /* FSCalendar.xcconfig */,
+				BF73484BC14766B7A11A3A51CA136895 /* FSCalendar-dummy.m */,
+				0A1BAB99AFA2DF62D0088F907BADEAEE /* FSCalendar-prefix.pch */,
+				EF921BDA43E4C1816F8CA0FE5B674A0A /* FSCalendar-umbrella.h */,
+				3AD4A6F8E8E97F01F34AEA6D107D0037 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1F7A09ED308B4E6949DB43EF542B6D26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463AFF947F690033D2F5547F9D94210B /* Pods-Water AppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66254EEB28ADCF631C4F0B6325864427 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C78D42E304E036327C6A0BA2DF6E154D /* Pods-Water App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF77AD7E7FEEB508FD54FB2918167A07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FAAE6F2C20F84431607591F5775DFB /* Pods-Water AppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5EFE33C112D00A2A9DE597CBC519EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625F05F7702CA250DEB66A699766DA9E /* FSCalendar-umbrella.h in Headers */,
+				9CF04404C01848D25E78B22A88BFF129 /* FSCalendar.h in Headers */,
+				FD051B5A9F3E663081656EB261A724D2 /* FSCalendarAppearance.h in Headers */,
+				F746795DC38AD2DB3D584A110174FED0 /* FSCalendarCalculator.h in Headers */,
+				F75DFB5A6E8642C4964CC3968A2DD0C8 /* FSCalendarCell.h in Headers */,
+				E3B93CDF418A2678614DDAD9331C0C0D /* FSCalendarCollectionView.h in Headers */,
+				91693C90642539B4F411E794548A9E2A /* FSCalendarCollectionViewLayout.h in Headers */,
+				0A7AF0E9B853211DE831CAAD4C21F11C /* FSCalendarConstants.h in Headers */,
+				57D4F36C483A487950FA1F143AE5DCBC /* FSCalendarDelegationFactory.h in Headers */,
+				49F1C59A34E52484FD2B6462CE8D7C91 /* FSCalendarDelegationProxy.h in Headers */,
+				712FF0C70B4C85F44AFB5CDDC1DD9018 /* FSCalendarDynamicHeader.h in Headers */,
+				C69663957B2EB4C7CF4D8192480AA8B4 /* FSCalendarExtensions.h in Headers */,
+				F6A1EC699E916996EF2B7B4C6137DB8D /* FSCalendarHeaderView.h in Headers */,
+				E1B077BAFD8840CA3D96BB4545B7B255 /* FSCalendarScopeHandle.h in Headers */,
+				D4F3BEEB43698475E5443150838E84ED /* FSCalendarStickyHeader.h in Headers */,
+				BDA1ED05CBA5580B30785A431D5B231B /* FSCalendarTransitionCoordinator.h in Headers */,
+				C17D68C964954EF1C0BB3C314C2F452F /* FSCalendarWeekdayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		0DC9D0610788036269CE345BC480F222 /* Pods-Water AppTests */ = {
+		4C47D9646A359FF893CD8F5F8218BAD1 /* Pods-Water App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F65B9C8F5162C51FC9D1937ED0E3F74 /* Build configuration list for PBXNativeTarget "Pods-Water AppTests" */;
+			buildConfigurationList = A377A69B643730B686ABD070A7345498 /* Build configuration list for PBXNativeTarget "Pods-Water App" */;
 			buildPhases = (
-				E333FC5416745FC7D024412D7EC4CBEB /* Sources */,
-				D34B9D07B11750E3B0C1BEBD453E0D47 /* Frameworks */,
+				C003EE3A87A8E3917310DBF728DD808E /* Sources */,
+				523683144D9BCB5F895CAA7EB0CB1A7D /* Frameworks */,
+				66254EEB28ADCF631C4F0B6325864427 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB168CEA60269145ECFE2D90E2BB6FC3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Water App";
+			productName = "Pods-Water App";
+			productReference = AEDD6A84A2A627E44CB4AEC05208EB8E /* Pods_Water_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4C69462D84E08E954B70407C4BF13558 /* Pods-Water AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3441345B39A1BF8936195B78EBE1932 /* Build configuration list for PBXNativeTarget "Pods-Water AppTests" */;
+			buildPhases = (
+				85D628EAA235A6F03477EB70572AA660 /* Sources */,
+				2017BE535EA3A7FD52B885984BF7F2C9 /* Frameworks */,
+				1F7A09ED308B4E6949DB43EF542B6D26 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -179,31 +435,16 @@
 			);
 			name = "Pods-Water AppTests";
 			productName = "Pods-Water AppTests";
-			productReference = 680FF4C6350E10BF4182A23D56278BDC /* libPods-Water AppTests.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 631E74AC9A20425EF1C48429483A12E3 /* Pods_Water_AppTests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		95025B72D64FB4B08A2DDB731FD49A05 /* Pods-Water App */ = {
+		79F2F7BF92408E1DC0DC5ABE94823D81 /* Pods-Water AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F34650552175E849C478E9DA72E0DFD /* Build configuration list for PBXNativeTarget "Pods-Water App" */;
+			buildConfigurationList = BA16FCF8C1705FD658B0B38310CFDBEE /* Build configuration list for PBXNativeTarget "Pods-Water AppUITests" */;
 			buildPhases = (
-				1C920981B9B731C13622B04C39EF1142 /* Sources */,
-				85F1B6975AF5F5FA6BFC67F52C6B4617 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Water App";
-			productName = "Pods-Water App";
-			productReference = 23FDF32110DD5B3DADDF9EFBC8CAA22E /* libPods-Water App.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		9A22A1EC83B0ED6676D57BBBEE1F6D09 /* Pods-Water AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1279ADBCFD52DCCF42F3CF837B7BDBF0 /* Build configuration list for PBXNativeTarget "Pods-Water AppUITests" */;
-			buildPhases = (
-				2B2C69A1A9F7141309F129D8F77C640A /* Sources */,
-				A81094B6B9869D534B11AC6827BE7974 /* Frameworks */,
+				B5C8CBBE6F76189CAF92D1988A3AFA28 /* Sources */,
+				9CE9227F59E59827928192D8DB14FA84 /* Frameworks */,
+				AF77AD7E7FEEB508FD54FB2918167A07 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -211,8 +452,25 @@
 			);
 			name = "Pods-Water AppUITests";
 			productName = "Pods-Water AppUITests";
-			productReference = AEEF5309866B4EFE53F77010E14F01E6 /* libPods-Water AppUITests.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 584718142DAB3BC21A9AB2EB147FDCFA /* Pods_Water_AppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5A2DB7A84B7B78E359870D2E1B24AA7 /* FSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E489D1BD67E6516082312A3038C627E /* Build configuration list for PBXNativeTarget "FSCalendar" */;
+			buildPhases = (
+				3ECDCA9AFCCC7F02686144C6CFD30A86 /* Sources */,
+				2B0C121755DBF940DA569A041E683C9E /* Frameworks */,
+				FA5EFE33C112D00A2A9DE597CBC519EF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCalendar;
+			productName = FSCalendar;
+			productReference = F73692D8D8AD7DC2F3E17D2EDAFB68AA /* FSCalendar.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -231,136 +489,179 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7187F337D383B782442CFBDD33DCC100 /* Products */;
+			productRefGroup = 2B00420AADAAE79ABC1484BB868D984D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95025B72D64FB4B08A2DDB731FD49A05 /* Pods-Water App */,
-				0DC9D0610788036269CE345BC480F222 /* Pods-Water AppTests */,
-				9A22A1EC83B0ED6676D57BBBEE1F6D09 /* Pods-Water AppUITests */,
+				C5A2DB7A84B7B78E359870D2E1B24AA7 /* FSCalendar */,
+				4C47D9646A359FF893CD8F5F8218BAD1 /* Pods-Water App */,
+				4C69462D84E08E954B70407C4BF13558 /* Pods-Water AppTests */,
+				79F2F7BF92408E1DC0DC5ABE94823D81 /* Pods-Water AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C920981B9B731C13622B04C39EF1142 /* Sources */ = {
+		3ECDCA9AFCCC7F02686144C6CFD30A86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A6D7681460FF1DB602A8F5CE68D0C6E /* Pods-Water App-dummy.m in Sources */,
+				A3D1147CED9648BEDE2E47B8E8A44924 /* FSCalendar+Deprecated.m in Sources */,
+				8632FCFA0471878FC95240290BE97458 /* FSCalendar-dummy.m in Sources */,
+				66737F48243D514269C499D65A7B4DBE /* FSCalendar.m in Sources */,
+				0DD46AF65FABE6D2BDE4501F807046A6 /* FSCalendarAppearance.m in Sources */,
+				FFBEAF63A28F6A7DD881E8256F9503B7 /* FSCalendarCalculator.m in Sources */,
+				55F4561E55A6CF264BEDB8FB18B5FA8C /* FSCalendarCell.m in Sources */,
+				7E320930D1F4218F307C7FB786F0C514 /* FSCalendarCollectionView.m in Sources */,
+				A000A7A7023F7FB4CEDD1023EB87BF93 /* FSCalendarCollectionViewLayout.m in Sources */,
+				243E3FBB25AD6B55CDF6971E0D22DA4F /* FSCalendarConstants.m in Sources */,
+				F54E2CAED6EAE74D9E1F878E10FA30BD /* FSCalendarDelegationFactory.m in Sources */,
+				AA978FCF3EF1D8D10DDE3BB4C6312A7B /* FSCalendarDelegationProxy.m in Sources */,
+				96E021283F050BCADF9A9B668C77B203 /* FSCalendarExtensions.m in Sources */,
+				5C62C27E2855390100E9519DE3095DDB /* FSCalendarHeaderView.m in Sources */,
+				8E8E60E0406837DF7038528766C90AEA /* FSCalendarScopeHandle.m in Sources */,
+				EE078A13105301767BE0ECAC1705A9B5 /* FSCalendarStickyHeader.m in Sources */,
+				CDB052C277F6148BBAACB2C2C7C6321B /* FSCalendarTransitionCoordinator.m in Sources */,
+				8F7003744526BA3547F59200EE4F4D16 /* FSCalendarWeekdayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B2C69A1A9F7141309F129D8F77C640A /* Sources */ = {
+		85D628EAA235A6F03477EB70572AA660 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E07F36134E2E0ADEF2C85E8B8FCEB6 /* Pods-Water AppUITests-dummy.m in Sources */,
+				A6A2C47205D9CA0669A2453B9677D9A4 /* Pods-Water AppTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E333FC5416745FC7D024412D7EC4CBEB /* Sources */ = {
+		B5C8CBBE6F76189CAF92D1988A3AFA28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98F6A4773B14346665F63C2EAF14A35 /* Pods-Water AppTests-dummy.m in Sources */,
+				BF4E05CD02BC601CA9D804537AEC3A49 /* Pods-Water AppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C003EE3A87A8E3917310DBF728DD808E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B023807FF3CADD85D15E485C7D387DA /* Pods-Water App-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CB168CEA60269145ECFE2D90E2BB6FC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSCalendar;
+			target = C5A2DB7A84B7B78E359870D2E1B24AA7 /* FSCalendar */;
+			targetProxy = 26C633658D6A2EC497BB9235F49F8F29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		1530960C2F80467659A3791F19B6AA8C /* Debug */ = {
+		0166417896C125B1FD100184FD8C9E99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F638F11768273E6C12840FEE91499392 /* Pods-Water AppTests.debug.xcconfig */;
+			baseConfigurationReference = 4901656F406DFD7CA8115DC219E30A58 /* FSCalendar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		160EC086D22A68AACCFE175151E20FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A298DC37211E6994E00BD99DC6F64900 /* Pods-Water AppUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Water AppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Water AppUITests/Pods-Water AppUITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_Water_AppUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		2971C243C0D9D16B430393E7E9DBE37A /* Release */ = {
+		26006949BAC7919F0CE026514B4F938A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA85531FCCBBAFE7A615BE868633909C /* Pods-Water AppTests.release.xcconfig */;
+			baseConfigurationReference = 2F9AF17201E736F8F2DBBE488DA6D93E /* Pods-Water AppUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Water AppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Water AppUITests/Pods-Water AppUITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_Water_AppUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		3276ED0FA94BDB26264750910E3BE939 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0D4F4317FF6635F8726BBB51C4339CC /* Pods-Water App.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		3B7C2732F90543C2FF885D9CEF5B75F4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76B54C2FA37E9BA50D95A29228E47806 /* Pods-Water AppUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -402,51 +703,176 @@
 			};
 			name = Release;
 		};
-		6F5CAC9A5A923C7430E304E88661F47C /* Release */ = {
+		78688899EC67ABFD483E6929AE3E0EE6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E58D86BECFCCE0596594121A9926555 /* Pods-Water App.release.xcconfig */;
+			baseConfigurationReference = 578CD4B65C4A5DAD524FC01605BCFE9C /* Pods-Water App.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Water App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Water App/Pods-Water App.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_Water_App;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		912D994E7484C10A44BC28C522A63FAD /* Release */ = {
+		7C43D8E0EA546EFC74B0F3952CC470F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBD3FC10D431725A89D442C768E4BF2C /* Pods-Water AppUITests.release.xcconfig */;
+			baseConfigurationReference = 4901656F406DFD7CA8115DC219E30A58 /* FSCalendar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		931BF81C96F53F33B3CA59B4E8998F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 742F695C9CE47BAFC154AB5A623450A5 /* Pods-Water AppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Water AppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Water AppTests/Pods-Water AppTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_Water_AppTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A4A018F6512C4C78FF96AB4D7139F783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809A319EFEC9FFAFA080E0E89BDED545 /* Pods-Water App.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Water App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Water App/Pods-Water App.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Water_App;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE74C5ED2640A6781330062DB1A39B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6354B1E999BAA1DB58FF46ACD7570B /* Pods-Water AppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Water AppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Water AppTests/Pods-Water AppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Water_AppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -495,15 +921,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1279ADBCFD52DCCF42F3CF837B7BDBF0 /* Build configuration list for PBXNativeTarget "Pods-Water AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B7C2732F90543C2FF885D9CEF5B75F4 /* Debug */,
-				912D994E7484C10A44BC28C522A63FAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -513,20 +930,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F65B9C8F5162C51FC9D1937ED0E3F74 /* Build configuration list for PBXNativeTarget "Pods-Water AppTests" */ = {
+		9E489D1BD67E6516082312A3038C627E /* Build configuration list for PBXNativeTarget "FSCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1530960C2F80467659A3791F19B6AA8C /* Debug */,
-				2971C243C0D9D16B430393E7E9DBE37A /* Release */,
+				0166417896C125B1FD100184FD8C9E99 /* Debug */,
+				7C43D8E0EA546EFC74B0F3952CC470F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F34650552175E849C478E9DA72E0DFD /* Build configuration list for PBXNativeTarget "Pods-Water App" */ = {
+		A377A69B643730B686ABD070A7345498 /* Build configuration list for PBXNativeTarget "Pods-Water App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3276ED0FA94BDB26264750910E3BE939 /* Debug */,
-				6F5CAC9A5A923C7430E304E88661F47C /* Release */,
+				A4A018F6512C4C78FF96AB4D7139F783 /* Debug */,
+				78688899EC67ABFD483E6929AE3E0EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA16FCF8C1705FD658B0B38310CFDBEE /* Build configuration list for PBXNativeTarget "Pods-Water AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				160EC086D22A68AACCFE175151E20FAE /* Debug */,
+				26006949BAC7919F0CE026514B4F938A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3441345B39A1BF8936195B78EBE1932 /* Build configuration list for PBXNativeTarget "Pods-Water AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE74C5ED2640A6781330062DB1A39B20 /* Debug */,
+				931BF81C96F53F33B3CA59B4E8998F17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
