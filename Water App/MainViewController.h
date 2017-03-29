@@ -10,4 +10,8 @@
 
 @interface MainViewController : UIViewController
 
+@property (nonatomic, strong) NSManagedObjectContext *context;
+
+- (instancetype)initWithManagedObjectContext: (NSManagedObjectContext *)moc;
+
 @end

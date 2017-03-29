@@ -16,6 +16,14 @@
 
 @implementation MainViewController
 
+- (instancetype)initWithManagedObjectContext: (NSManagedObjectContext *)moc {
+    if (self = [super init]) {
+        self.context = moc;
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
