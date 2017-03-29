@@ -20,6 +20,7 @@
 @property (nonatomic, strong) TrackerViewController *trackerViewController;
 @property (nonatomic, strong) SettingsTableViewController *settingsTableViewController;
 
+//Label that displays name of the screen you are currently on
 @property (nonatomic, strong) UILabel *screenNameLabel;
 
 @end
@@ -38,6 +39,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Passes the context on to the EntryManager singleton
     if (self.context) {
         [[EntryManager sharedManager] setContext:self.context];
     }
@@ -53,6 +55,7 @@
 #pragma mark - UIScrollViewDelegate Methods
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    // Sets the name of the screen you're currently on
     self.screenNameLabel.text = [self currentScreenName];
 }
 
@@ -87,12 +90,15 @@
 #pragma mark - Setup Methods
 
 - (void)setupChildViewControllers {
+    
+    // Creates the children view controllers and passes them the NSManagedObjectContext
+    
     if (!self.mainViewController) {
-        self.mainViewController = [[MainViewController alloc] init];
+        self.mainViewController = [[MainViewController alloc] initWithManagedObjectContext:self.context];
     }
     
     if (!self.trackerViewController) {
-        self.trackerViewController = [[TrackerViewController alloc] init];
+        self.trackerViewController = [[TrackerViewController alloc] initWithManagedObjectContext:self.context];
     }
     
     if (!self.settingsTableViewController) {
