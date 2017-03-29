@@ -21,6 +21,7 @@
     // Override point for customization after application launch.
     
     ParentViewController *pvc = [[ParentViewController alloc] init];
+    pvc.context = [[self persistentContainer] viewContext];
     
     self.window.rootViewController = pvc;
     self.window.backgroundColor = [UIColor whiteColor];

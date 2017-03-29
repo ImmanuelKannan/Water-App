@@ -11,6 +11,7 @@
 #import "TrackerViewController.h"
 #import "SettingsTableViewController.h"
 #import "Constants.h"
+#import "EntryManager.h"
 
 @interface ParentViewController ()
 
@@ -36,6 +37,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if (self.context) {
+        [[EntryManager sharedManager] setContext:self.context];
+    }
     
     [self setupChildViewControllers];
     [self setupScrollView];

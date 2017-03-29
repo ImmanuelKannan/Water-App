@@ -10,4 +10,6 @@
 
 @interface ParentViewController : UIViewController < UIScrollViewDelegate >
 
+@property (nonatomic, strong) NSManagedObjectContext *context;
+
 @end
