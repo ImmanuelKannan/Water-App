@@ -40,11 +40,7 @@
     [self setupChildViewControllers];
     [self setupScrollView];
     [self setupDivider];
-    
-    self.screenNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, self.view.bounds.size.width - 40, 25)];
-    self.screenNameLabel.textAlignment = NSTextAlignmentCenter;
-    self.screenNameLabel.textColor = kWhiteColor;
-    [self.view addSubview:self.screenNameLabel];
+    [self setupScreenNameLabel];
     
     self.view.backgroundColor = kBackgroundColor;
 }
@@ -52,29 +48,34 @@
 #pragma mark - UIScrollViewDelegate Methods
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    int page = self.scrollView.contentOffset.x / self.scrollView.frame.size.width;
-    
-    switch (page) {
-        case 0:
-            self.screenNameLabel.text = @"Tracker View";
-            break;
-        case 1:
-            self.screenNameLabel.text = @"Main View";
-            break;
-        case 2:
-            self.screenNameLabel.text = @"Settings View";
-            break;
-        default:
-            break;
-    }
-    
-    NSLog(@"Page: %@", self.screenNameLabel);
+    self.screenNameLabel.text = [self currentScreenName];
 }
 
 #pragma mark - Other Methods
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+- (NSString *)currentScreenName {
+    int page = self.scrollView.contentOffset.x / self.scrollView.frame.size.width;
+    
+    switch (page) {
+        case 0:
+            return @"Tracker View";
+            break;
+        case 1:
+            return @"Main View";
+            break;
+        case 2:
+            return @"Settings View";
+            break;
+        default:
+            return nil;
+            break;
+    }
+    
+    NSLog(@"Page: %@", self.screenNameLabel);
 }
 
 
@@ -136,6 +137,15 @@
     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
     
     [self.view.layer addSublayer:shapeLayer];
+}
+
+- (void)setupScreenNameLabel {
+    self.screenNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, self.view.bounds.size.width - 40, 25)];
+    self.screenNameLabel.textAlignment = NSTextAlignmentCenter;
+    self.screenNameLabel.textColor = kWhiteColor;
+    [self.view addSubview:self.screenNameLabel];
+    
+    self.screenNameLabel.text = [self currentScreenName];
 }
 
 @end
