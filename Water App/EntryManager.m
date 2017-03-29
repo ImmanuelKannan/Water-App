@@ -7,7 +7,27 @@
 //
 
 #import "EntryManager.h"
+#import "DateFormatterManager.h"
 
 @implementation EntryManager
+
++ (instancetype)sharedManager {
+    static EntryManager *entryManager = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        entryManager = [[self alloc] init];
+    });
+    
+    return entryManager;
+}
+
+- (instancetype)init {
+    if (self = [super init]) {
+        
+    }
+    
+    return self;
+}
 
 @end
