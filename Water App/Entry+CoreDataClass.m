@@ -10,4 +10,8 @@
 
 @implementation Entry
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Date: %@, Number of Glasses: %@", self.date, self.numberOfGlasses];
+}
+
 @end

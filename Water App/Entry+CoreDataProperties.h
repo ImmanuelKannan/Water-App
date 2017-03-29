@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSFetchRequest<Entry *> *)fetchRequest;
 
 @property (nullable, nonatomic, copy) NSString *date;
-@property (nonatomic) int16_t numberOfGlasses;
+@property (nonatomic) NSNumber *numberOfGlasses;
 
 @end
 

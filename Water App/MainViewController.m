@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "Entry+CoreDataClass.h"
 #import "Constants.h"
 
 @interface MainViewController ()
@@ -20,6 +21,7 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = kBackgroundColor;
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -6,10 +6,12 @@
 //  Copyright © 2017 Immanuel Kannan. All rights reserved.
 //
 
+#import <FSCalendar/FSCalendar.h>
+#import "Entry+CoreDataClass.h"
 #import "TrackerViewController.h"
 #import "Constants.h"
 
-@interface TrackerViewController ()
+@interface TrackerViewController () < FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance >
 
 @property (nonatomic, strong) FSCalendar *calendar;
 
@@ -24,6 +26,7 @@
     [self setupCalendar];
     
     self.view.backgroundColor = kBackgroundColor;
+
 }
 
 #pragma mark - Setup Methods

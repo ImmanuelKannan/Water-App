@@ -18,6 +18,9 @@
 		187E89111E840BC5007DFB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E890F1E840BC5007DFB52 /* LaunchScreen.storyboard */; };
 		187E891C1E840BC5007DFB52 /* Water_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E891B1E840BC5007DFB52 /* Water_AppTests.m */; };
 		187E89271E840BC5007DFB52 /* Water_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89261E840BC5007DFB52 /* Water_AppUITests.m */; };
+		18CC6C381E8A25CE00F5208B /* Entry+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC6C351E8A25CE00F5208B /* Entry+CoreDataClass.m */; };
+		18CC6C391E8A25CE00F5208B /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC6C371E8A25CE00F5208B /* Entry+CoreDataProperties.m */; };
+		18CC6C3C1E8A26AF00F5208B /* DateFormatterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC6C3B1E8A26AF00F5208B /* DateFormatterManager.m */; };
 		6218D4358F9DC7F52738F4CD /* Pods_Water_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F395FD4F112C5E0B879AB591 /* Pods_Water_App.framework */; };
 		B640DDA1C03D5EE118B9E155 /* Pods_Water_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E32F47B0E66911D251722 /* Pods_Water_AppUITests.framework */; };
 		EF6A4F83A6361CE7FD8D6F73 /* Pods_Water_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C0F6920C8FDABFB5F17373 /* Pods_Water_AppTests.framework */; };
@@ -65,6 +68,12 @@
 		187E89221E840BC5007DFB52 /* Water AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Water AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187E89261E840BC5007DFB52 /* Water_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Water_AppUITests.m; sourceTree = "<group>"; };
 		187E89281E840BC5007DFB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CC6C341E8A25CE00F5208B /* Entry+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entry+CoreDataClass.h"; sourceTree = "<group>"; };
+		18CC6C351E8A25CE00F5208B /* Entry+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entry+CoreDataClass.m"; sourceTree = "<group>"; };
+		18CC6C361E8A25CE00F5208B /* Entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		18CC6C371E8A25CE00F5208B /* Entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		18CC6C3A1E8A26AF00F5208B /* DateFormatterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormatterManager.h; sourceTree = "<group>"; };
+		18CC6C3B1E8A26AF00F5208B /* DateFormatterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatterManager.m; sourceTree = "<group>"; };
 		1E0E6F9AD04C1ADA95E99FDA /* Pods-Water AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Water AppUITests/Pods-Water AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		272FA7EAD7780D29F208EAED /* Pods-Water App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Water App/Pods-Water App.release.xcconfig"; sourceTree = "<group>"; };
 		42B3C0002EE72748344FEFDC /* Pods-Water AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Water AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Water AppUITests/Pods-Water AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,16 +137,11 @@
 		187E88FD1E840BC5007DFB52 /* Water App */ = {
 			isa = PBXGroup;
 			children = (
+				18CC6C321E8A259D00F5208B /* Models */,
+				18CC6C331E8A25A300F5208B /* Views */,
+				18CC6C311E8A259400F5208B /* Controllers */,
 				187E89011E840BC5007DFB52 /* AppDelegate.h */,
 				187E89021E840BC5007DFB52 /* AppDelegate.m */,
-				182F0E2C1E8482520019DF4A /* ParentViewController.h */,
-				182F0E2D1E8482520019DF4A /* ParentViewController.m */,
-				182F0E3E1E8487A10019DF4A /* TrackerViewController.h */,
-				182F0E3F1E8487A10019DF4A /* TrackerViewController.m */,
-				182F0E3B1E8487970019DF4A /* MainViewController.h */,
-				182F0E3C1E8487970019DF4A /* MainViewController.m */,
-				182F0E381E8487730019DF4A /* SettingsTableViewController.h */,
-				182F0E391E8487730019DF4A /* SettingsTableViewController.m */,
 				182F0E411E848B450019DF4A /* Constants.h */,
 				187E890D1E840BC5007DFB52 /* Assets.xcassets */,
 				187E890F1E840BC5007DFB52 /* LaunchScreen.storyboard */,
@@ -172,6 +176,41 @@
 				187E89281E840BC5007DFB52 /* Info.plist */,
 			);
 			path = "Water AppUITests";
+			sourceTree = "<group>";
+		};
+		18CC6C311E8A259400F5208B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				182F0E2C1E8482520019DF4A /* ParentViewController.h */,
+				182F0E2D1E8482520019DF4A /* ParentViewController.m */,
+				182F0E3E1E8487A10019DF4A /* TrackerViewController.h */,
+				182F0E3F1E8487A10019DF4A /* TrackerViewController.m */,
+				182F0E3B1E8487970019DF4A /* MainViewController.h */,
+				182F0E3C1E8487970019DF4A /* MainViewController.m */,
+				182F0E381E8487730019DF4A /* SettingsTableViewController.h */,
+				182F0E391E8487730019DF4A /* SettingsTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		18CC6C321E8A259D00F5208B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18CC6C3A1E8A26AF00F5208B /* DateFormatterManager.h */,
+				18CC6C3B1E8A26AF00F5208B /* DateFormatterManager.m */,
+				18CC6C341E8A25CE00F5208B /* Entry+CoreDataClass.h */,
+				18CC6C351E8A25CE00F5208B /* Entry+CoreDataClass.m */,
+				18CC6C361E8A25CE00F5208B /* Entry+CoreDataProperties.h */,
+				18CC6C371E8A25CE00F5208B /* Entry+CoreDataProperties.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		18CC6C331E8A25A300F5208B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		621E94E5AF633035646D9A36 /* Pods */ = {
@@ -484,7 +523,10 @@
 				182F0E3D1E8487970019DF4A /* MainViewController.m in Sources */,
 				187E890C1E840BC5007DFB52 /* Water_App.xcdatamodeld in Sources */,
 				187E89031E840BC5007DFB52 /* AppDelegate.m in Sources */,
+				18CC6C391E8A25CE00F5208B /* Entry+CoreDataProperties.m in Sources */,
 				182F0E2E1E8482520019DF4A /* ParentViewController.m in Sources */,
+				18CC6C381E8A25CE00F5208B /* Entry+CoreDataClass.m in Sources */,
+				18CC6C3C1E8A26AF00F5208B /* DateFormatterManager.m in Sources */,
 				187E89001E840BC5007DFB52 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
