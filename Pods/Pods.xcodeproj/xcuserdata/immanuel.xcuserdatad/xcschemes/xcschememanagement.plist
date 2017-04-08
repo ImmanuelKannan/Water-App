@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BAFluidView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FSCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4C47D9646A359FF893CD8F5F8218BAD1</key>
+		<key>41804C3F7B422752ED4744DAA6DB60C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>C5A2DB7A84B7B78E359870D2E1B24AA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F11640825B0032AB3BCF02C48F586A8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

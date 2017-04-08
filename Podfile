@@ -7,6 +7,7 @@ target 'Water App' do
 
   # Pods for Water App
   pod ‘FSCalendar’
+  pod 'BAFluidView'
 
   target 'Water AppTests' do
     inherit! :search_paths

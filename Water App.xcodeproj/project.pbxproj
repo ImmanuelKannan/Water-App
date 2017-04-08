@@ -11,6 +11,7 @@
 		182F0E3A1E8487730019DF4A /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F0E391E8487730019DF4A /* SettingsTableViewController.m */; };
 		182F0E3D1E8487970019DF4A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F0E3C1E8487970019DF4A /* MainViewController.m */; };
 		182F0E401E8487A10019DF4A /* TrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182F0E3F1E8487A10019DF4A /* TrackerViewController.m */; };
+		185D84731E8BC873002666AC /* EntryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D84721E8BC873002666AC /* EntryManager.m */; };
 		187E89001E840BC5007DFB52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E88FF1E840BC5007DFB52 /* main.m */; };
 		187E89031E840BC5007DFB52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89021E840BC5007DFB52 /* AppDelegate.m */; };
 		187E890C1E840BC5007DFB52 /* Water_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187E890A1E840BC5007DFB52 /* Water_App.xcdatamodeld */; };
@@ -54,6 +55,8 @@
 		182F0E3E1E8487A10019DF4A /* TrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerViewController.h; sourceTree = "<group>"; };
 		182F0E3F1E8487A10019DF4A /* TrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
 		182F0E411E848B450019DF4A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		185D84711E8BC873002666AC /* EntryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryManager.h; sourceTree = "<group>"; };
+		185D84721E8BC873002666AC /* EntryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryManager.m; sourceTree = "<group>"; };
 		187E88FB1E840BC5007DFB52 /* Water App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Water App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187E88FF1E840BC5007DFB52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		187E89011E840BC5007DFB52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 		18CC6C321E8A259D00F5208B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				185D84711E8BC873002666AC /* EntryManager.h */,
+				185D84721E8BC873002666AC /* EntryManager.m */,
 				18CC6C3A1E8A26AF00F5208B /* DateFormatterManager.h */,
 				18CC6C3B1E8A26AF00F5208B /* DateFormatterManager.m */,
 				18CC6C341E8A25CE00F5208B /* Entry+CoreDataClass.h */,
@@ -528,6 +533,7 @@
 				18CC6C381E8A25CE00F5208B /* Entry+CoreDataClass.m in Sources */,
 				18CC6C3C1E8A26AF00F5208B /* DateFormatterManager.m in Sources */,
 				187E89001E840BC5007DFB52 /* main.m in Sources */,
+				185D84731E8BC873002666AC /* EntryManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
