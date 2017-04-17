@@ -14,6 +14,6 @@
 
 // Returns a date formatter that is compatible with an
 // entries "yyyy-MM-dd" format
-- (NSDateFormatter *)entryDate;
+- (NSDateFormatter *)entryDateFormat;
 
 @end

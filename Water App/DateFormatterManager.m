@@ -35,7 +35,7 @@
     return self;
 }
 
-- (NSDateFormatter *)entryDate {
+- (NSDateFormatter *)entryDateFormat {
     self.formatter.dateFormat = @"yyyy-MM-dd";
     
     return self.formatter;
