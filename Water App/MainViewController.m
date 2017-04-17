@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 #import "Entry+CoreDataClass.h"
+#import "EntryManager.h"
+#import "DateFormatterManager.h"
 #import "Constants.h"
 #import <BAFluidView/BAFluidView.h>
 
@@ -25,7 +27,7 @@
 
 - (instancetype)initWithManagedObjectContext: (NSManagedObjectContext *)moc {
     if (self = [super init]) {
-        self.context = moc;
+        _context = moc;
     }
     
     return self;
@@ -40,7 +42,6 @@
     [self setupThreeLabel];
     
     self.view.backgroundColor = kBackgroundColor;
-
 }
 
 #pragma mark - Setup Methods
@@ -101,10 +102,11 @@
     self.numberOfGlassesLabel.backgroundColor = [UIColor clearColor];
     self.numberOfGlassesLabel.textAlignment = NSTextAlignmentCenter;
     self.numberOfGlassesLabel.font = [UIFont fontWithName:kFont size:45];
-    self.numberOfGlassesLabel.text = @"5";
+//    self.numberOfGlassesLabel.text = @"5";
     self.numberOfGlassesLabel.textColor = [UIColor whiteColor];
     [self.view addSubview:self.numberOfGlassesLabel];
     
+    self.numberOfGlassesLabel.text = [NSString stringWithFormat:@"%@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses]];
 }
 
 - (void)setupThreeLabel {
