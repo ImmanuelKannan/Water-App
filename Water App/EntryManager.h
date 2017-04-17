@@ -12,14 +12,15 @@
 
 @interface EntryManager : NSObject
 
+@property (nonatomic, weak) NSManagedObjectContext *context;
+
 @property (nonatomic, strong) Entry *currentlySelectedEntry;
-@property (nonatomic, strong) NSManagedObjectContext *context;
+@property (nonatomic, strong) Entry *todayEntry;
+@property (nonatomic, strong) NSMutableDictionary *entryCache;
 
 + (instancetype)sharedManager;
 
-+ (void)setCurrentlySelectedEntry: (NSString *)date;
-
-- (void)addOneGlassToCurrentlySelectedEntry;
-- (void)subtractOneGlassFromCurrentlySelectedEntry;
+- (void)populateEntryCache;
+- (void)createEntryForDate: (NSString *)date;
 
 @end
