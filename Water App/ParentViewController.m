@@ -41,7 +41,11 @@
     
     // Passes the context on to the EntryManager singleton
     if (self.context) {
-        [[EntryManager sharedManager] setContext:self.context];
+//        [[EntryManager sharedManager] setContext:self.context];
+//        [[EntryManager sharedManager] populateEntryCache];
+    }
+    else {
+        NSLog(@"ParentViewController: self.context wasn't initialized");
     }
     
     [self setupChildViewControllers];
