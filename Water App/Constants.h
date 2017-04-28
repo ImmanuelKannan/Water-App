@@ -9,6 +9,9 @@
 #ifndef Constants_h
 #define Constants_h
 
+#pragma mark - Numerical Constants
+
+    #define ARC4RANDOM_MAX 0x100000000
 
 #pragma mark - Colors
 

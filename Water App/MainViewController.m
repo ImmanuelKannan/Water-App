@@ -21,6 +21,9 @@
 @property (nonatomic, strong) UILabel *numberOfGlassesLabel;
 @property (nonatomic, strong) UILabel *threeLabel;
 
+@property (nonatomic, strong) UIView *fluidContainerView;
+@property (nonatomic, strong) BAFluidView *fluidView;
+
 @end
 
 @implementation MainViewController
@@ -41,10 +44,86 @@
     [self setupnumberOfGlassesLabel];
     [self setupThreeLabel];
     
+//    [self setupContainerView];
+    
     self.view.backgroundColor = kBackgroundColor;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self setupContainerView];
+    [self setupFluidView];
+}
+
 #pragma mark - Setup Methods
+
+- (void)setupContainerView {
+    
+    if (!self.fluidContainerView) {
+        NSLog(@"LOL");
+        
+        self.fluidContainerView = [[UIView alloc] init];
+        self.fluidContainerView.backgroundColor = [UIColor clearColor];
+        self.fluidContainerView.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.fluidContainerView.layer.borderWidth = 2;
+        [self.view addSubview:self.fluidContainerView];
+        self.fluidContainerView.translatesAutoresizingMaskIntoConstraints = NO;
+        
+        NSMutableDictionary *views = [[NSMutableDictionary alloc] init];
+        [views setObject:self.fluidContainerView forKey:@"containerView"];
+        
+        if (!self.plusButton) {
+            NSLog(@"PLUS NOT INITIALIZED");
+        }
+        else {
+            [views setObject:self.plusButton forKey:@"plus"];
+        }
+//        [views setObject:self.plusButton forKey:@"plus"];
+        
+        NSMutableDictionary *metrics = [[NSMutableDictionary alloc] init];
+        [metrics setObject:@35 forKey:@"space"];
+        
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[containerView]-35-[plus]"
+                                                                          options:0
+                                                                          metrics:metrics
+                                                                            views:views]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-35-[containerView]-55-|"
+                                                                          options:0
+                                                                          metrics:metrics
+                                                                            views:views]];
+    }
+    
+    else {
+        NSLog(@"was inited");
+    }
+    
+    [self.view layoutIfNeeded];
+    
+}
+
+- (void)setupFluidView {
+    
+    CGFloat width, height;
+    width = self.fluidContainerView.frame.size.width;
+    height = self.fluidContainerView.frame.size.height;
+    
+    NSLog(@"width: %f, height %f", width, height);
+    
+    self.fluidView = [[BAFluidView alloc] initWithFrame:CGRectMake(0, 0, width, height) maxAmplitude:20 minAmplitude:8 amplitudeIncrement:1];
+    self.fluidView.strokeColor = [UIColor redColor];
+    [self.fluidView keepStationary];
+    self.fluidView.fillAutoReverse = NO;
+    [self.fluidContainerView addSubview:self.fluidView];
+    
+    [self updateUI];
+}
+
+- (void)updateUI {
+    double val = ((double)arc4random() / ARC4RANDOM_MAX);
+    NSNumber *qty = [NSNumber numberWithDouble:val];
+    [self.fluidView fillTo:qty];
+}
 
 - (void)setupButtons {
     
