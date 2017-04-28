@@ -16,8 +16,14 @@
 @implementation SettingsTableViewController
 
 - (instancetype)init {
-    if (self = [super init]) {
-        
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                   reason:@"Don't use -init. Use -initWithStyle:ManagedObjectContext instead"
+                                 userInfo:nil];
+}
+
+- (instancetype)initWithStyle:(UITableViewStyle)style ManagedObjectContext:(NSManagedObjectContext *)moc {
+    if (self = [super initWithStyle:style]) {
+        _context = moc;
     }
     
     return self;
@@ -33,6 +39,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.view.backgroundColor = kBackgroundColor;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,12 +57,47 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    switch (section) {
+        case 0:
+            return 2;
+            break;
+        case 1:
+            return 1;
+            break;
+            
+        default:
+            return 0;
+            break;
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger section = indexPath.section;
+    NSInteger row = indexPath.row;
+    
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.backgroundColor = kBackgroundColor;
+    cell.textLabel.textColor = kWhiteColor;
+    
+    
+    if (section == 0 && row == 0) {
+        cell.textLabel.text = @"How Many Glasses?";
+    }
+    
+    else if (section == 0 && row == 1) {
+        cell.textLabel.text = @"Reminders";
+    }
+    
+    else if (section == 1 && row == 0) {
+        cell.textLabel.text = @"Clear Data";
+    }
+    
+    return cell;
 }
 
 /*

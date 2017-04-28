@@ -106,7 +106,7 @@
     }
     
     if (!self.settingsTableViewController) {
-        self.settingsTableViewController = [[SettingsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        self.settingsTableViewController = [[SettingsTableViewController alloc] initWithStyle:UITableViewStyleGrouped ManagedObjectContext:self.context];
     }
 }
 

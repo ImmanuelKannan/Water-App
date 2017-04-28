@@ -10,4 +10,8 @@
 
 @interface SettingsTableViewController : UITableViewController < UITableViewDelegate, UITableViewDataSource >
 
+@property (nonatomic, strong) NSManagedObjectContext *context;
+
+- (instancetype)initWithStyle:(UITableViewStyle)style ManagedObjectContext:(NSManagedObjectContext *)moc;
+
 @end
