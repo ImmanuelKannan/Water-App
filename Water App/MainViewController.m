@@ -44,15 +44,16 @@
     [self setupnumberOfGlassesLabel];
     [self setupThreeLabel];
     
-//    [self setupContainerView];
+    [self setupContainerView];
     
     self.view.backgroundColor = kBackgroundColor;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self.view layoutIfNeeded];
     
-    [self setupContainerView];
+    // Setup FluidView after the Main View finishes setting up
     [self setupFluidView];
 }
 
@@ -61,13 +62,14 @@
 - (void)setupContainerView {
     
     if (!self.fluidContainerView) {
-        NSLog(@"LOL");
         
         self.fluidContainerView = [[UIView alloc] init];
         self.fluidContainerView.backgroundColor = [UIColor clearColor];
         self.fluidContainerView.layer.borderColor = [UIColor whiteColor].CGColor;
-        self.fluidContainerView.layer.borderWidth = 2;
         [self.view addSubview:self.fluidContainerView];
+    
+        /* Auto Layout */
+        //Use constraints instead of frames
         self.fluidContainerView.translatesAutoresizingMaskIntoConstraints = NO;
         
         NSMutableDictionary *views = [[NSMutableDictionary alloc] init];
@@ -79,16 +81,15 @@
         else {
             [views setObject:self.plusButton forKey:@"plus"];
         }
-//        [views setObject:self.plusButton forKey:@"plus"];
         
         NSMutableDictionary *metrics = [[NSMutableDictionary alloc] init];
         [metrics setObject:@35 forKey:@"space"];
         
-        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-15-[containerView]-35-[plus]"
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[containerView]-35-[plus]"
                                                                           options:0
                                                                           metrics:metrics
                                                                             views:views]];
-        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-35-[containerView]-55-|"
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[containerView]-100-|"
                                                                           options:0
                                                                           metrics:metrics
                                                                             views:views]];
@@ -98,31 +99,51 @@
         NSLog(@"was inited");
     }
     
+    // Translates the constraints into a frame for the container view
     [self.view layoutIfNeeded];
+    
     
 }
 
 - (void)setupFluidView {
     
+    // Gets the width and height of the container view
     CGFloat width, height;
     width = self.fluidContainerView.frame.size.width;
     height = self.fluidContainerView.frame.size.height;
     
-    NSLog(@"width: %f, height %f", width, height);
-    
-    self.fluidView = [[BAFluidView alloc] initWithFrame:CGRectMake(0, 0, width, height) maxAmplitude:20 minAmplitude:8 amplitudeIncrement:1];
+    // Instantiates the fluid view with the containers width and height
+    self.fluidView = [[BAFluidView alloc] initWithFrame:CGRectMake(0, 0, width, height) maxAmplitude:1 minAmplitude:1 amplitudeIncrement:1];
     self.fluidView.strokeColor = [UIColor redColor];
+    self.fluidView.fillDuration = 1.5;
     [self.fluidView keepStationary];
     self.fluidView.fillAutoReverse = NO;
     [self.fluidContainerView addSubview:self.fluidView];
     
+    // Sets up the masking image and fluid view background
+    UIImage *maskingImage = [UIImage imageNamed:@"icon"];
+    UIImageView *maskingView = [[UIImageView alloc] initWithImage:maskingImage];
+    maskingView.frame = self.fluidView.frame;
+    CALayer *maskLayer = [CALayer layer];
+    maskLayer.frame = self.fluidView.frame;
+    [maskLayer setContents:(id)[maskingImage CGImage]];
+    [self.fluidView.layer setMask:maskLayer];
+    [self.fluidContainerView addSubview:self.fluidView];
+    [self.fluidContainerView insertSubview:maskingView belowSubview:self.fluidView];
+    
+    // !~!~!~!~ For testing purposes only ~!~!~!~!
+    // Fills the fluidView to a random value
     [self updateUI];
 }
 
 - (void)updateUI {
-    double val = ((double)arc4random() / ARC4RANDOM_MAX);
-    NSNumber *qty = [NSNumber numberWithDouble:val];
-    [self.fluidView fillTo:qty];
+    
+    if (self.fluidView) {
+        double val = ((double)arc4random() / ARC4RANDOM_MAX);
+        NSNumber *qty = [NSNumber numberWithDouble:val];
+        [self.fluidView fillTo:qty];
+    }
+
 }
 
 - (void)setupButtons {
@@ -145,6 +166,7 @@
     [self.minusButton addTarget:self action:@selector(minusButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     self.minusButton.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.minusButton];
+    
 
     /* Auto Layout */
     //Basically says to use constraints instead of frames
@@ -166,7 +188,7 @@
                                                                       options:0
                                                                       metrics:metrics
                                                                         views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[minusButton(66)]-35-[plusButton(66)]-55-|"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[plusButton(66)]-35-[minusButton(66)]-55-|"
                                                                       options:0
                                                                       metrics:metrics
                                                                         views:views]];
@@ -204,10 +226,16 @@
 }
 
 - (void)plusButtonPressed {
-    NSLog(@"Plus");
+    if (self.fluidView) {
+        [self updateUI];
+        NSLog(@"Plus");
+    }
+//    [self updateUI];
+//    NSLog(@"Plus");
 }
 
 - (void)minusButtonPressed {
+    [self updateUI];
     NSLog(@"Minus");
 }
 
