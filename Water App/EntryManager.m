@@ -95,18 +95,26 @@
 }
 
 - (void)setContext:(NSManagedObjectContext *)context {
+    /* 
+       Sets the NSManagedObjectContext property for the EntryManager
+       and populates the entry cache once the context has been set
+     */
+    
     _context = context;
     
     if (self.context) {
         // Populates the entryCache
         [self populateEntryCache];
         
+        NSDateFormatter *entryDateFormat = [[DateFormatterManager sharedManager] entryDateFormat];
+        
         // Checks if an entry for the current day exists
         // If one does not exist, create an entry, and set it as self.todayEntry and self.currentlySelectedEntry
         // If one does exist, set it as self.currentlySelectedEntry and self.todayEntry
-        if (!(self.todayEntry = [self entryForDate:[[[DateFormatterManager sharedManager] entryDateFormat] stringFromDate:[NSDate date]]])) {
-            [self createEntryForDate:[[[DateFormatterManager sharedManager] entryDateFormat] stringFromDate:[NSDate date]]];
-            self.todayEntry = [[EntryManager sharedManager] entryForDate:[[[DateFormatterManager sharedManager] entryDateFormat] stringFromDate:[NSDate date]]];
+        if (!(self.todayEntry = [self entryForDate:[entryDateFormat stringFromDate:[NSDate date]]])) {
+//            [self createEntryForDate:[[[DateFormatterManager sharedManager] entryDateFormat] stringFromDate:[NSDate date]]];
+            [self createEntryForDate:[entryDateFormat stringFromDate:[NSDate date]]];
+            self.todayEntry = [self entryForDate:[[[DateFormatterManager sharedManager] entryDateFormat] stringFromDate:[NSDate date]]];
             self.currentlySelectedEntry = self.todayEntry;
             NSLog(@"JUST CREATED: %@", self.todayEntry);
         }
@@ -114,6 +122,26 @@
             self.currentlySelectedEntry = self.todayEntry;
             NSLog(@"Always believed: %@", self.todayEntry);
         }
+    }
+}
+
+- (void)incrementTodayEntry {
+    if (self.todayEntry) {
+        self.todayEntry.numberOfGlasses = [NSNumber numberWithInt:[self.todayEntry.numberOfGlasses intValue] + 1];
+    }
+}
+
+- (void)decrementTodayEntry {
+    if (self.todayEntry) {
+        
+        if ([self.todayEntry.numberOfGlasses isEqualToNumber:@0]) {
+            self.todayEntry.numberOfGlasses = @0;
+        }
+        
+        else {
+            self.todayEntry.numberOfGlasses = [NSNumber numberWithInt:[self.todayEntry.numberOfGlasses intValue] - 1];
+        }
+//        self.todayEntry.numberOfGlasses = [NSNumber numberWithInt:[self.todayEntry.numberOfGlasses intValue] - 1];
     }
 }
 

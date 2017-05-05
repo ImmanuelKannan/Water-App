@@ -23,4 +23,10 @@
 - (void)populateEntryCache;
 - (void)createEntryForDate: (NSString *)date;
 
+- (void)incrementTodayEntry;
+- (void)decrementTodayEntry;
+
+- (void)incrementEntry: (Entry *)currentlySelectedEntry;
+- (void)decrementEntry: (Entry *)currentlySelectedEntry;
+
 @end
