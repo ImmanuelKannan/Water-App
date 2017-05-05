@@ -10,6 +10,8 @@
 #import "Entry+CoreDataClass.h"
 #import "TrackerViewController.h"
 #import "Constants.h"
+#import "EntryManager.h"
+#import "DateFormatterManager.h"
 
 @interface TrackerViewController () < FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance >
 
@@ -33,7 +35,7 @@
     
     [self setupCalendar];
     
-    self.view.backgroundColor = kBackgroundColor;
+    self.view.backgroundColor = [UIColor clearColor];
 
 }
 
@@ -45,6 +47,8 @@
     calendar.dataSource = self;
     [self.view addSubview:calendar];
     self.calendar = calendar;
+    
+    self.calendar.firstWeekday = 2;
     
     self.calendar.appearance.headerTitleFont = [UIFont fontWithName:kFont size:20];
     self.calendar.appearance.headerTitleColor = kWhiteColor;
@@ -60,9 +64,33 @@
     
 }
 
-- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance titleDefaultColorForDate:(NSDate *)date {
+//- (UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance titleDefaultColorForDate:(NSDate *)date {
+//    
+//    NSDateFormatter *entryDateFormatter = [[DateFormatterManager sharedManager] entryDateFormat];
+//    
+//}
+
+-(UIColor *)calendar:(FSCalendar *)calendar appearance:(FSCalendarAppearance *)appearance fillDefaultColorForDate:(NSDate *)date {
+    EntryManager *entryManager = [EntryManager sharedManager];
+    NSDateFormatter *entryDateFormatter = [[DateFormatterManager sharedManager] entryDateFormat];
+    NSString *dateString = [NSString stringWithFormat:@"%@", [entryDateFormatter stringFromDate:date]];
     
-    return kWhiteColor;
+    if ([[entryManager entryCache] objectForKey:dateString]) {
+        return [UIColor greenColor];
+    }
+    
+    else
+        return [UIColor clearColor];
+}
+
+#pragma mark - FSCalendar Methods
+
+- (void)calendar:(FSCalendar *)calendar didSelectDate:(NSDate *)date atMonthPosition:(FSCalendarMonthPosition)monthPosition {
+    EntryManager *entryManager = [EntryManager sharedManager];
+    NSDateFormatter *entryDateFormatter = [[DateFormatterManager sharedManager] entryDateFormat];
+    NSString *dateString = [NSString stringWithFormat:@"%@", [entryDateFormatter stringFromDate:date]];
+    
+    NSLog(@"%@", [[[entryManager entryCache] objectForKey:dateString] description]);
 }
 
 
