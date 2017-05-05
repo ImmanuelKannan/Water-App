@@ -13,6 +13,8 @@
 #import "Constants.h"
 #import <BAFluidView/BAFluidView.h>
 
+#define goal 12
+
 @interface MainViewController ()
 
 @property (nonatomic, strong) UIButton *plusButton;
@@ -46,16 +48,28 @@
     
     [self setupContainerView];
     
-    self.view.backgroundColor = kBackgroundColor;
+    self.view.backgroundColor = [UIColor clearColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+    [super viewDidAppear:animated];
     [self.view layoutIfNeeded];
     
     // Setup FluidView after the Main View finishes setting up
-    [self setupFluidView];
-}
+    if (!self.fluidView) {
+        [self setupFluidView];
+    }
+ }
+
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    
+////    [self.view layoutIfNeeded];
+////    
+////    if (!self.fluidView) {
+////        [self setupFluidView];
+////    }
+//}
 
 #pragma mark - Setup Methods
 
@@ -113,9 +127,9 @@
     height = self.fluidContainerView.frame.size.height;
     
     // Instantiates the fluid view with the containers width and height
-    self.fluidView = [[BAFluidView alloc] initWithFrame:CGRectMake(0, 0, width, height) maxAmplitude:1 minAmplitude:1 amplitudeIncrement:1];
+    self.fluidView = [[BAFluidView alloc] initWithFrame:CGRectMake(0, 0, width, height) maxAmplitude:10 minAmplitude:1 amplitudeIncrement:1];
     self.fluidView.strokeColor = [UIColor redColor];
-    self.fluidView.fillDuration = 1.5;
+    self.fluidView.fillDuration = 2;
     [self.fluidView keepStationary];
     self.fluidView.fillAutoReverse = NO;
     [self.fluidContainerView addSubview:self.fluidView];
@@ -130,6 +144,7 @@
     [self.fluidView.layer setMask:maskLayer];
     [self.fluidContainerView addSubview:self.fluidView];
     [self.fluidContainerView insertSubview:maskingView belowSubview:self.fluidView];
+//    self.fluidContainerView.backgroundColor = kFluidBackground;
     
     // !~!~!~!~ For testing purposes only ~!~!~!~!
     // Fills the fluidView to a random value
@@ -139,9 +154,14 @@
 - (void)updateUI {
     
     if (self.fluidView) {
-        double val = ((double)arc4random() / ARC4RANDOM_MAX);
-        NSNumber *qty = [NSNumber numberWithDouble:val];
-        [self.fluidView fillTo:qty];
+//        double val = ((double)arc4random() / ARC4RANDOM_MAX);
+//        NSNumber *qty = [NSNumber numberWithDouble:val];
+//        [self.fluidView fillTo:qty];
+        
+        NSNumber *fill = @([[[[EntryManager sharedManager] todayEntry] numberOfGlasses] doubleValue] / goal);
+        [self.fluidView fillTo:fill];
+        
+        self.numberOfGlassesLabel.text = [NSString stringWithFormat:@"%@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses] ];
     }
 
 }
@@ -227,16 +247,19 @@
 
 - (void)plusButtonPressed {
     if (self.fluidView) {
+        [[EntryManager sharedManager] incrementTodayEntry];
+        NSLog(@"Number of glasses: %@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses]);
         [self updateUI];
-        NSLog(@"Plus");
     }
 //    [self updateUI];
 //    NSLog(@"Plus");
 }
 
 - (void)minusButtonPressed {
+    [[EntryManager sharedManager] decrementTodayEntry];
+    NSLog(@"Number of glasses: %@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses]);
     [self updateUI];
-    NSLog(@"Minus");
+
 }
 
 @end
