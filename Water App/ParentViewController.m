@@ -48,12 +48,15 @@
         NSLog(@"ParentViewController: self.context wasn't initialized");
     }
     
+    [self setupGradient];
     [self setupChildViewControllers];
     [self setupScrollView];
     [self setupDivider];
     [self setupScreenNameLabel];
     
-    self.view.backgroundColor = kBackgroundColor;
+//    self.view.backgroundColor = kBackgroundColor;
+//    [self setupGradient];
+    
 }
 
 #pragma mark - UIScrollViewDelegate Methods
@@ -74,13 +77,13 @@
     
     switch (page) {
         case 0:
-            return @"Tracker View";
+            return @"Tracker";
             break;
         case 1:
-            return @"Main View";
+            return @"Today";
             break;
         case 2:
-            return @"Settings View";
+            return @"Settings";
             break;
         default:
             return nil;
@@ -161,6 +164,15 @@
     [self.view addSubview:self.screenNameLabel];
     
     self.screenNameLabel.text = [self currentScreenName];
+}
+
+- (void)setupGradient {
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = self.view.frame;
+    
+    gradientLayer.colors = @[(id)kColor1.CGColor, (id)kColor2.CGColor];
+    
+    [self.view.layer addSublayer:gradientLayer];
 }
 
 @end
