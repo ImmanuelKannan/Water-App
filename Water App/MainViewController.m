@@ -128,7 +128,7 @@
     
     // Instantiates the fluid view with the containers width and height
     self.fluidView = [[BAFluidView alloc] initWithFrame:CGRectMake(0, 0, width, height) maxAmplitude:10 minAmplitude:1 amplitudeIncrement:1];
-    self.fluidView.strokeColor = [UIColor redColor];
+    self.fluidView.strokeColor = [UIColor whiteColor];
     self.fluidView.fillDuration = 2;
     [self.fluidView keepStationary];
     self.fluidView.fillAutoReverse = NO;
