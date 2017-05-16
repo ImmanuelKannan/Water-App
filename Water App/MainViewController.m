@@ -11,20 +11,23 @@
 #import "EntryManager.h"
 #import "DateFormatterManager.h"
 #import "Constants.h"
+#import "CircleUIView.h"
+#import "CircleUIButton.h"
 #import <BAFluidView/BAFluidView.h>
 
-#define goal 12
+#define goal 10
 
 @interface MainViewController ()
 
-@property (nonatomic, strong) UIButton *plusButton;
-@property (nonatomic, strong) UIButton *minusButton;
+@property (nonatomic, strong) EntryManager *entryManager;
 
-@property (nonatomic, strong) UILabel *numberOfGlassesLabel;
-@property (nonatomic, strong) UILabel *threeLabel;
+@property (nonatomic, strong) CircleUIButton *plusButton;
+@property (nonatomic, strong) CircleUIButton *minusButton;
 
-@property (nonatomic, strong) UIView *fluidContainerView;
+@property (nonatomic, strong) CircleUIView *fluidContainerView;
 @property (nonatomic, strong) BAFluidView *fluidView;
+
+@property (nonatomic, strong) UILabel *glassesCounterLabel;
 
 @end
 
@@ -33,6 +36,7 @@
 - (instancetype)initWithManagedObjectContext: (NSManagedObjectContext *)moc {
     if (self = [super init]) {
         _context = moc;
+        _entryManager = [EntryManager sharedManager];
     }
     
     return self;
@@ -41,35 +45,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self setupButtons];
-    [self setupnumberOfGlassesLabel];
-    [self setupThreeLabel];
-    
     [self setupContainerView];
+    [self setupButtons];
     
     self.view.backgroundColor = [UIColor clearColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self.view layoutIfNeeded];
+//    [self.view layoutIfNeeded];
     
     // Setup FluidView after the Main View finishes setting up
     if (!self.fluidView) {
         [self setupFluidView];
     }
+    [self setupGlassesCounterLabel];
+    [self.view layoutIfNeeded];
  }
-
-//- (void)viewWillAppear:(BOOL)animated {
-//    [super viewWillAppear:animated];
-//    
-////    [self.view layoutIfNeeded];
-////    
-////    if (!self.fluidView) {
-////        [self setupFluidView];
-////    }
-//}
 
 #pragma mark - Setup Methods
 
@@ -77,99 +69,64 @@
     
     if (!self.fluidContainerView) {
         
-        self.fluidContainerView = [[UIView alloc] init];
+        self.fluidContainerView = [[CircleUIView alloc] init];
         self.fluidContainerView.backgroundColor = [UIColor clearColor];
         self.fluidContainerView.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.fluidContainerView.layer.borderWidth = 1.5;
         [self.view addSubview:self.fluidContainerView];
     
         /* Auto Layout */
         //Use constraints instead of frames
         self.fluidContainerView.translatesAutoresizingMaskIntoConstraints = NO;
         
-        NSMutableDictionary *views = [[NSMutableDictionary alloc] init];
-        [views setObject:self.fluidContainerView forKey:@"containerView"];
+        // Sets fluidContainerView.width to be 70% of MainViewController.width
+        [[self.fluidContainerView.widthAnchor constraintEqualToAnchor:self.view.widthAnchor multiplier:.70] setActive:TRUE];
+
+        // Sets fluidContainerView.height to be equal to fluidContainerView.width
+        [[self.fluidContainerView.heightAnchor constraintEqualToAnchor:self.fluidContainerView.widthAnchor] setActive:TRUE];
+
+        // Centers fluidContainerView with MainViewController
+        [[self.fluidContainerView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor] setActive:TRUE];
+
+        // Sets where the fluidContainerView's top should be
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.fluidContainerView
+                                                              attribute:NSLayoutAttributeTop
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:self.view
+                                                              attribute:NSLayoutAttributeBottom
+                                                             multiplier:.1
+                                                               constant:0]];
         
-        if (!self.plusButton) {
-            NSLog(@"PLUS NOT INITIALIZED");
-        }
-        else {
-            [views setObject:self.plusButton forKey:@"plus"];
-        }
-        
-        NSMutableDictionary *metrics = [[NSMutableDictionary alloc] init];
-        [metrics setObject:@35 forKey:@"space"];
-        
-        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-35-[containerView]-35-[plus]"
-                                                                          options:0
-                                                                          metrics:metrics
-                                                                            views:views]];
-        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[containerView]-100-|"
-                                                                          options:0
-                                                                          metrics:metrics
-                                                                            views:views]];
     }
-    
-    else {
-        NSLog(@"was inited");
-    }
-    
-    // Translates the constraints into a frame for the container view
-    [self.view layoutIfNeeded];
-    
-    
 }
 
+
 - (void)setupFluidView {
+    CGFloat width = self.fluidContainerView.frame.size.width;
+    CGFloat height = self.fluidContainerView.frame.size.height;
     
-    // Gets the width and height of the container view
-    CGFloat width, height;
-    width = self.fluidContainerView.frame.size.width;
-    height = self.fluidContainerView.frame.size.height;
-    
-    // Instantiates the fluid view with the containers width and height
-    self.fluidView = [[BAFluidView alloc] initWithFrame:CGRectMake(0, 0, width, height) maxAmplitude:10 minAmplitude:1 amplitudeIncrement:1];
-    self.fluidView.strokeColor = [UIColor whiteColor];
+    self.fluidView = [[BAFluidView alloc] initWithFrame:CGRectMake(0, 0, width, height) maxAmplitude:20 minAmplitude:10 amplitudeIncrement:1];
     self.fluidView.fillDuration = 2;
     [self.fluidView keepStationary];
     self.fluidView.fillAutoReverse = NO;
     [self.fluidContainerView addSubview:self.fluidView];
     
-    // Sets up the masking image and fluid view background
-    UIImage *maskingImage = [UIImage imageNamed:@"icon"];
-    UIImageView *maskingView = [[UIImageView alloc] initWithImage:maskingImage];
-    maskingView.frame = self.fluidView.frame;
-    CALayer *maskLayer = [CALayer layer];
-    maskLayer.frame = self.fluidView.frame;
-    [maskLayer setContents:(id)[maskingImage CGImage]];
-    [self.fluidView.layer setMask:maskLayer];
-    [self.fluidContainerView addSubview:self.fluidView];
-    [self.fluidContainerView insertSubview:maskingView belowSubview:self.fluidView];
-//    self.fluidContainerView.backgroundColor = kFluidBackground;
+    // Sets up the circular mask for the fluidView
+    UIImage *maskingImage = [UIImage imageNamed:@"circle"];
+    CALayer *maskingLayer = [CALayer layer];
+    maskingLayer.frame = self.fluidView.frame;
+    maskingLayer.contents = (id)maskingImage.CGImage;
     
-    // !~!~!~!~ For testing purposes only ~!~!~!~!
-    // Fills the fluidView to a random value
+    [self.fluidView.layer setMask:maskingLayer];
+    
     [self updateUI];
-}
-
-- (void)updateUI {
     
-    if (self.fluidView) {
-//        double val = ((double)arc4random() / ARC4RANDOM_MAX);
-//        NSNumber *qty = [NSNumber numberWithDouble:val];
-//        [self.fluidView fillTo:qty];
-        
-        NSNumber *fill = @([[[[EntryManager sharedManager] todayEntry] numberOfGlasses] doubleValue] / goal);
-        [self.fluidView fillTo:fill];
-        
-        self.numberOfGlassesLabel.text = [NSString stringWithFormat:@"%@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses] ];
-    }
-
 }
 
 - (void)setupButtons {
     
     /* Setup for "plus button" */
-    self.plusButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.plusButton = [CircleUIButton buttonWithType:UIButtonTypeCustom];
     self.plusButton.layer.cornerRadius = 33;
     self.plusButton.layer.borderWidth = 1.5;
     self.plusButton.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -178,7 +135,7 @@
     [self.view addSubview:self.plusButton];
     
     /* Setup for "minus button" */
-    self.minusButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.minusButton = [CircleUIButton buttonWithType:UIButtonTypeCustom];
     self.minusButton.frame = CGRectMake((self.view.bounds.size.width / 2) + 60, 320, 65, 65);
     self.minusButton.layer.cornerRadius = self.minusButton.bounds.size.width / 2;
     self.minusButton.layer.borderWidth = 1.5;
@@ -192,74 +149,91 @@
     //Basically says to use constraints instead of frames
     self.plusButton.translatesAutoresizingMaskIntoConstraints = NO;
     self.minusButton.translatesAutoresizingMaskIntoConstraints = NO;
-
-    NSMutableDictionary *views = [[NSMutableDictionary alloc] init];
-    [views setObject:self.plusButton forKey:@"plusButton"];
-    [views setObject:self.minusButton forKey:@"minusButton"];
     
-    NSMutableDictionary *metrics = [[NSMutableDictionary alloc] init];
-    [metrics setValue:@35 forKey:@"space"];
+    // Sets the width, height and right anchors
+    [self.plusButton.widthAnchor constraintEqualToAnchor:self.view.widthAnchor multiplier:0.27].active = TRUE;
+    [self.plusButton.heightAnchor constraintEqualToAnchor:self.plusButton.widthAnchor].active = TRUE;
+    [self.plusButton.rightAnchor constraintEqualToAnchor:self.fluidContainerView.rightAnchor constant:25].active = TRUE;
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.plusButton
+                                                          attribute:NSLayoutAttributeTop
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.fluidContainerView
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1.15
+                                                           constant:0]];
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[plusButton(66)]-35-|"
-                                                                      options:0
-                                                                      metrics:metrics
-                                                                        views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[minusButton(66)]-35-|"
-                                                                      options:0
-                                                                      metrics:metrics
-                                                                        views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[plusButton(66)]-35-[minusButton(66)]-55-|"
-                                                                      options:0
-                                                                      metrics:metrics
-                                                                        views:views]];
+    [self.minusButton.widthAnchor constraintEqualToAnchor:self.view.widthAnchor multiplier:0.27].active = TRUE;
+    [self.minusButton.heightAnchor constraintEqualToAnchor:self.minusButton.widthAnchor].active = TRUE;
+    [self.minusButton.leftAnchor constraintEqualToAnchor:self.fluidContainerView.leftAnchor constant:-25].active = TRUE;
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.minusButton
+                                                          attribute:NSLayoutAttributeTop
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.fluidContainerView
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1.15
+                                                           constant:0]];
 }
 
-- (void)setupnumberOfGlassesLabel {
+- (void)setupGlassesCounterLabel {
     
-    /* Setup label that displays the number of glasses the user has drunk */
+    /* Setup the label in the middle of the fluidView that displays the number of glasses the user has already consumed */
     
-    // !! Remember to implement Auto Layout here !!
-    self.numberOfGlassesLabel = [[UILabel alloc] initWithFrame:CGRectMake((self.view.bounds.size.width / 2) + 60, 65, 65, 65)];
-    self.numberOfGlassesLabel.backgroundColor = [UIColor clearColor];
-    self.numberOfGlassesLabel.textAlignment = NSTextAlignmentCenter;
-    self.numberOfGlassesLabel.font = [UIFont fontWithName:kFont size:45];
-//    self.numberOfGlassesLabel.text = @"5";
-    self.numberOfGlassesLabel.textColor = [UIColor whiteColor];
-    [self.view addSubview:self.numberOfGlassesLabel];
+    CGFloat diameterOfFluidView = self.fluidContainerView.bounds.size.width;
+    CGFloat side = [self sideOfSquareWithCircleDiameter:diameterOfFluidView];
+    CGFloat originOffset = (diameterOfFluidView - side) / 2;
     
-    self.numberOfGlassesLabel.text = [NSString stringWithFormat:@"%@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses]];
+    self.glassesCounterLabel = [[UILabel alloc] initWithFrame:CGRectMake(originOffset, originOffset, side, side)];
+    [self.fluidView addSubview:self.glassesCounterLabel];
+    self.glassesCounterLabel.backgroundColor = [UIColor redColor];
+    self.glassesCounterLabel.text = [NSString stringWithFormat:@"%@", [[self.entryManager currentlySelectedEntry] numberOfGlasses]];
+    
 }
 
-- (void)setupThreeLabel {
-    
-    /* Setup for the label that displays "glass" or "glasses" depending on the number of glasses drunk */
-    
-    // !! Rename the property and the method !!
-    // !! Remember to implement Auto Layout !!
-    self.threeLabel = [[UILabel alloc] initWithFrame:CGRectMake((self.view.bounds.size.width / 2) + 60, 65 + 65, 65, 20)];
-    self.threeLabel.backgroundColor = [UIColor clearColor];
-    self.threeLabel.textColor = [UIColor whiteColor];
-    self.threeLabel.font = [UIFont fontWithName:kFont size:18];
-    self.threeLabel.textAlignment = NSTextAlignmentCenter;
-    self.threeLabel.text = @"Glasses";
-    [self.view addSubview:self.threeLabel];
-}
+#pragma mark - Button Methods
 
 - (void)plusButtonPressed {
     if (self.fluidView) {
-        [[EntryManager sharedManager] incrementTodayEntry];
+        [self.entryManager incrementTodayEntry];
         NSLog(@"Number of glasses: %@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses]);
         [self updateUI];
     }
-//    [self updateUI];
-//    NSLog(@"Plus");
 }
 
 - (void)minusButtonPressed {
     [[EntryManager sharedManager] decrementTodayEntry];
     NSLog(@"Number of glasses: %@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses]);
     [self updateUI];
+}
 
+#pragma mark - Other Methods
+
+- (void)updateUI {
+    
+    if (self.fluidView) {
+        
+        /*
+         Fills the fluidView to a random quantity
+         
+         double val = ((double)arc4random() / ARC4RANDOM_MAX);
+         NSNumber *qty = [NSNumber numberWithDouble:val];
+         [self.fluidView fillTo:qty];
+         */
+        
+        NSNumber *fill = @([[[[EntryManager sharedManager] todayEntry] numberOfGlasses] doubleValue] / goal);
+        [self.fluidView fillTo:fill];
+        
+//        self.numberOfGlassesLabel.text = [NSString stringWithFormat:@"%@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses] ];
+        self.glassesCounterLabel.text = [NSString stringWithFormat:@"%@", [[[EntryManager sharedManager] todayEntry] numberOfGlasses]];
+    }
+    
+}
+
+- (CGFloat)sideOfSquareWithCircleDiameter:(CGFloat)diameter {
+    CGFloat side;
+    
+    side = sqrtf(pow(diameter, 2) / 2);
+    
+    return side * .70;
 }
 
 @end
