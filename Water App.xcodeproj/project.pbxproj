@@ -19,6 +19,8 @@
 		187E89111E840BC5007DFB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E890F1E840BC5007DFB52 /* LaunchScreen.storyboard */; };
 		187E891C1E840BC5007DFB52 /* Water_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E891B1E840BC5007DFB52 /* Water_AppTests.m */; };
 		187E89271E840BC5007DFB52 /* Water_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E89261E840BC5007DFB52 /* Water_AppUITests.m */; };
+		18974A5E1ECAC55C006135A4 /* CircleUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18974A5D1ECAC55B006135A4 /* CircleUIView.m */; };
+		18974A651ECB6536006135A4 /* CircleUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18974A641ECB6536006135A4 /* CircleUIButton.m */; };
 		18CC6C381E8A25CE00F5208B /* Entry+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC6C351E8A25CE00F5208B /* Entry+CoreDataClass.m */; };
 		18CC6C391E8A25CE00F5208B /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC6C371E8A25CE00F5208B /* Entry+CoreDataProperties.m */; };
 		18CC6C3C1E8A26AF00F5208B /* DateFormatterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CC6C3B1E8A26AF00F5208B /* DateFormatterManager.m */; };
@@ -71,6 +73,10 @@
 		187E89221E840BC5007DFB52 /* Water AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Water AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187E89261E840BC5007DFB52 /* Water_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Water_AppUITests.m; sourceTree = "<group>"; };
 		187E89281E840BC5007DFB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18974A5C1ECAC55B006135A4 /* CircleUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleUIView.h; sourceTree = "<group>"; };
+		18974A5D1ECAC55B006135A4 /* CircleUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleUIView.m; sourceTree = "<group>"; };
+		18974A631ECB6536006135A4 /* CircleUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleUIButton.h; sourceTree = "<group>"; };
+		18974A641ECB6536006135A4 /* CircleUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleUIButton.m; sourceTree = "<group>"; };
 		18CC6C341E8A25CE00F5208B /* Entry+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entry+CoreDataClass.h"; sourceTree = "<group>"; };
 		18CC6C351E8A25CE00F5208B /* Entry+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entry+CoreDataClass.m"; sourceTree = "<group>"; };
 		18CC6C361E8A25CE00F5208B /* Entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entry+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -158,6 +164,10 @@
 		187E88FE1E840BC5007DFB52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18974A5C1ECAC55B006135A4 /* CircleUIView.h */,
+				18974A5D1ECAC55B006135A4 /* CircleUIView.m */,
+				18974A631ECB6536006135A4 /* CircleUIButton.h */,
+				18974A641ECB6536006135A4 /* CircleUIButton.m */,
 				187E88FF1E840BC5007DFB52 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -526,11 +536,13 @@
 				182F0E3A1E8487730019DF4A /* SettingsTableViewController.m in Sources */,
 				182F0E401E8487A10019DF4A /* TrackerViewController.m in Sources */,
 				182F0E3D1E8487970019DF4A /* MainViewController.m in Sources */,
+				18974A651ECB6536006135A4 /* CircleUIButton.m in Sources */,
 				187E890C1E840BC5007DFB52 /* Water_App.xcdatamodeld in Sources */,
 				187E89031E840BC5007DFB52 /* AppDelegate.m in Sources */,
 				18CC6C391E8A25CE00F5208B /* Entry+CoreDataProperties.m in Sources */,
 				182F0E2E1E8482520019DF4A /* ParentViewController.m in Sources */,
 				18CC6C381E8A25CE00F5208B /* Entry+CoreDataClass.m in Sources */,
+				18974A5E1ECAC55C006135A4 /* CircleUIView.m in Sources */,
 				18CC6C3C1E8A26AF00F5208B /* DateFormatterManager.m in Sources */,
 				187E89001E840BC5007DFB52 /* main.m in Sources */,
 				185D84731E8BC873002666AC /* EntryManager.m in Sources */,

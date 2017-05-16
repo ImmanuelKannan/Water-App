@@ -96,42 +96,42 @@
 		2285A452CB764A104AD3B9726B3F2B7B /* BAFluidView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-prefix.pch"; sourceTree = "<group>"; };
 		232AF5549D81522185709DFDDA32978F /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
 		260265330F4E0A7760CE8F536A2B17FD /* Pods-Water App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water App-frameworks.sh"; sourceTree = "<group>"; };
-		26CA8241D11361633C72BFB491A0E911 /* Pods_Water_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Water_App.framework; path = "Pods-Water App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BA3091A0854C6FA6E58881F3D39D2F8 /* Pods_Water_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Water_AppUITests.framework; path = "Pods-Water AppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CA8241D11361633C72BFB491A0E911 /* Pods_Water_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Water_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA3091A0854C6FA6E58881F3D39D2F8 /* Pods_Water_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Water_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7B9F8F1A7CA22AA68D1E74A7F271B8 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
 		2F9AF17201E736F8F2DBBE488DA6D93E /* Pods-Water AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		35011B98D79CBF1CF3E7C3ACA2175939 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		35011B98D79CBF1CF3E7C3ACA2175939 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FSCalendar.modulemap; sourceTree = "<group>"; };
 		36B7D356D94DBCE80898071A7197474C /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
 		3917A50EB224EEDBC66971700D698782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		39AFD4EE7895D0789CFABDAFBFC9E0E6 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
 		3CC83F0A5EBE8DE571359F6FBA1A0BF9 /* BAFluidView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAFluidView-dummy.m"; sourceTree = "<group>"; };
 		3E6354B1E999BAA1DB58FF46ACD7570B /* Pods-Water AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		42651D5059B74EFD6B8944126ACC5F89 /* Pods-Water AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Water AppTests.modulemap"; sourceTree = "<group>"; };
+		42651D5059B74EFD6B8944126ACC5F89 /* Pods-Water AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Water AppTests.modulemap"; sourceTree = "<group>"; };
 		42A5538D576CF255F0CB21BBDAE45488 /* Pods-Water AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water AppUITests-dummy.m"; sourceTree = "<group>"; };
 		4778992BF90AE5400F39942D2972EB93 /* Pods-Water App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water App-acknowledgements.plist"; sourceTree = "<group>"; };
 		53EC80168B7CD71F8FE145F0831B0A66 /* BAFluidView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BAFluidView.xcconfig; sourceTree = "<group>"; };
 		55450A7EF403C34AB5A20576A970F56F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		578CD4B65C4A5DAD524FC01605BCFE9C /* Pods-Water App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water App.release.xcconfig"; sourceTree = "<group>"; };
 		5B1569823662EF07FEF94861411777D9 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
-		5B25236909BFA7E83FFCE1C8D0000026 /* BAFluidView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BAFluidView.modulemap; sourceTree = "<group>"; };
+		5B25236909BFA7E83FFCE1C8D0000026 /* BAFluidView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BAFluidView.modulemap; sourceTree = "<group>"; };
 		5E7553134492A2DCC21EF0B149A1D785 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
 		618AE8AE2456E8E756B306183BAC4853 /* Pods-Water AppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppUITests-frameworks.sh"; sourceTree = "<group>"; };
-		63FB8FED7EB4A7EF4BE0AE4BCE30149C /* Pods_Water_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Water_AppTests.framework; path = "Pods-Water AppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FB8FED7EB4A7EF4BE0AE4BCE30149C /* Pods_Water_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Water_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65467D16E98A60847DBE88C6ADF77B33 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
 		742F695C9CE47BAFC154AB5A623450A5 /* Pods-Water AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		7C104C5346001B507A9C1B4A45D906D6 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "Pod/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
 		7E188928C4E5C12536774923509E3164 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
 		809A319EFEC9FFAFA080E0E89BDED545 /* Pods-Water App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Water App.debug.xcconfig"; sourceTree = "<group>"; };
 		80DFACAFC398B5E97741369FE57AF622 /* Pods-Water App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Water App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		82FB6BF4D37AD1C7D730978585A67FA5 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82FB6BF4D37AD1C7D730978585A67FA5 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DB29C7D97103BC45FA183709F07375 /* Pods-Water AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Water AppUITests-umbrella.h"; sourceTree = "<group>"; };
 		8A8FA0BD93B4AF7B027C669822E933F6 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
 		8AEE26C1F85FA7DE50116ED38FD81E51 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
 		8DF06B8F2D4E01BE1283954241314A10 /* BAFluidView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAFluidView.h; path = Pod/Classes/BAFluidView.h; sourceTree = "<group>"; };
 		8EFC539DA0B8E2EB6013FAF5353339EC /* Pods-Water App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Water App-umbrella.h"; sourceTree = "<group>"; };
 		8FEBA3BE62B6405F0FD244ED0F7E83EA /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9773CAF9B587E9735C4895F143BCBD01 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
 		9AA1BF0876188319F80C19003BBB58E6 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
 		9E061EE1AF62CD89DBB70E1E062D1B77 /* BAFluidView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BAFluidView-umbrella.h"; sourceTree = "<group>"; };
@@ -141,11 +141,11 @@
 		A3701BD12DDFAA45D8595578FCA2ED9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3816CA38A53D7E5DC21226797257B7F /* Pods-Water AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A7F25170CFB6BAC8E00606B0F2ADA28C /* Pods-Water AppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water AppTests-frameworks.sh"; sourceTree = "<group>"; };
-		ACB04BA5003D387F19C3D667A0B865E1 /* Pods-Water App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Water App.modulemap"; sourceTree = "<group>"; };
+		ACB04BA5003D387F19C3D667A0B865E1 /* Pods-Water App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Water App.modulemap"; sourceTree = "<group>"; };
 		AEC5F184C2D85C2AE1E788EC21FFB2D6 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
 		AEE49C5C24C25DD8811AA807956D4414 /* Pods-Water App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Water App-resources.sh"; sourceTree = "<group>"; };
 		AF490F4B4044535717EE434EBE8AABCD /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
-		B0DAEE38E41259FA64D4E46AAC640AB6 /* BAFluidView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BAFluidView.framework; path = BAFluidView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0DAEE38E41259FA64D4E46AAC640AB6 /* BAFluidView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BAFluidView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CBA434AC796B68B26FA35A6A155D30 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
 		B4D75C18A0593252B08EC1E49260E44F /* Pods-Water AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Water AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B4F9DDAFAFADC81BC0B6699BE8F29790 /* Pods-Water App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Water App-dummy.m"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		EFF4186C1041E4B16662967C3CDF7A8F /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "Pod/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
 		F744DBE8E51D2843F9AE41E552554273 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
 		FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		FC2A3907EE2B60EB94115E2A8262C867 /* Pods-Water AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Water AppUITests.modulemap"; sourceTree = "<group>"; };
+		FC2A3907EE2B60EB94115E2A8262C867 /* Pods-Water AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Water AppUITests.modulemap"; sourceTree = "<group>"; };
 		FFDCD31DF47B0E94766C08745AD64696 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -264,7 +264,6 @@
 				C0E8D88536DFD5C1657C43F93A9BA7F9 /* FSCalendarWeekdayView.m */,
 				B1EE4A2AE98CAFE14C1E49A6EABAAC09 /* Support Files */,
 			);
-			name = FSCalendar;
 			path = FSCalendar;
 			sourceTree = "<group>";
 		};
@@ -296,7 +295,6 @@
 				7C104C5346001B507A9C1B4A45D906D6 /* UIColor+ColorWithHex.m */,
 				D27DF5EE2D3FEF0908F75ED9F67FBD83 /* Support Files */,
 			);
-			name = BAFluidView;
 			path = BAFluidView;
 			sourceTree = "<group>";
 		};
